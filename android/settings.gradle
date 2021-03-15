@@ -9,6 +9,8 @@ include ':@voxeet_react-native-voxeet-conferencekit'
 project(':@voxeet_react-native-voxeet-conferencekit').projectDir = new File(rootProject.projectDir, '../node_modules/@voxeet/react-native-voxeet-conferencekit/android')
 include ':@voxeet_react-native-voxeet-conferencekit'
 project(':@voxeet_react-native-voxeet-conferencekit').projectDir = new File(rootProject.projectDir, '../node_modules/@voxeet/react-native-voxeet-conferencekit/android')
+include ':@voxeet_react-native-voxeet-conferencekit'
+project(':@voxeet_react-native-voxeet-conferencekit').projectDir = new File(rootProject.projectDir, '../node_modules/@voxeet/react-native-voxeet-conferencekit/android')
 
 apply from: '../node_modules/react-native-unimodules/gradle.groovy'
 includeUnimodulesProjects()

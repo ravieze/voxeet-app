@@ -22,6 +22,8 @@ target 'voxeetapp' do
   #  post_install do |installer|
 #  #    flipper_post_install(installer)
   #  end
+  pod 'voxeet-uxkit-reactnative', :path => '../node_modules/@voxeet/react-native-voxeet-conferencekit'
+
   post_install do |installer|
     installer.pods_project.targets.each do |target|
      target.build_configurations.each do |config|
