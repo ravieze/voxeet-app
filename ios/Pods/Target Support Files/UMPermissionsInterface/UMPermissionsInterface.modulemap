@@ -1,0 +1,6 @@
+framework module UMPermissionsInterface {
+  umbrella header "UMPermissionsInterface-umbrella.h"
+
+  export *
+  module * { export * }
+}

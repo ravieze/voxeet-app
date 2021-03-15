@@ -1,0 +1,6 @@
+framework module VoxeetUXKit {
+  umbrella header "VoxeetUXKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

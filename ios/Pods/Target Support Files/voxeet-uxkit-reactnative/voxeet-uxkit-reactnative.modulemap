@@ -1,0 +1,6 @@
+framework module voxeet_uxkit_reactnative {
+  umbrella header "voxeet-uxkit-reactnative-umbrella.h"
+
+  export *
+  module * { export * }
+}

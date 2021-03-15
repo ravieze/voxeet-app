@@ -1,0 +1,917 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VoxeetSDK
+import AVFoundation
+import CallKit
+import CommonCrypto
+import Compression
+import CoreFoundation
+import Dispatch
+import Foundation
+import MobileCoreServices
+import PushKit
+import ReplayKit
+import Security
+import Swift
+import SystemConfiguration
+import UIKit
+import UserNotifications
+@_exported import VoxeetSDK
+import zlib
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class VTCommandService : ObjectiveC.NSObject {
+  @objc weak public var delegate: VoxeetSDK.VTCommandDelegate?
+  @objc deinit
+  @objc public func send(message: Swift.String, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class VTNotificationService : ObjectiveC.NSObject {
+  @objc final public let push: VoxeetSDK.VTNotificationPushManager
+  @objc weak public var delegate: VoxeetSDK.VTNotificationDelegate?
+  @objc @available(*, deprecated, renamed: "push.type")
+  public var type: VoxeetSDK.VTNotificationPushType {
+    @objc get
+    @objc set
+  }
+  @objc @available(*, deprecated, renamed: "push.includesCallsInRecents")
+  public var includesCallsInRecents: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @available(*, deprecated, renamed: "push.incomingCallTimeout")
+  public var incomingCallTimeout: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+  @objc public func subscribe(subscriptions: [VoxeetSDK.VTSubscribeBase], completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func unsubscribe(subscriptions: [VoxeetSDK.VTSubscribeBase], completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func invite(conference: VoxeetSDK.VTConference, participantInfos: [VoxeetSDK.VTParticipantInfo], completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func decline(conference: VoxeetSDK.VTConference, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+}
+extension VTNotificationService {
+  @objc @available(*, deprecated, renamed: "invite(conference:participantInfos:completion:)")
+  dynamic public func invite(conference: VoxeetSDK.VTConference, externalIDs: [Swift.String], completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+}
+@objc public protocol VTSessionDelegate {
+  @objc func sessionUpdated(state: VoxeetSDK.VTSessionState)
+}
+@objc public protocol VTNotificationDelegate {
+  @objc func invitationReceived(notification: VoxeetSDK.VTInvitationReceivedNotification)
+  @objc func conferenceStatus(notification: VoxeetSDK.VTConferenceStatusNotification)
+  @objc func conferenceCreated(notification: VoxeetSDK.VTConferenceCreatedNotification)
+  @objc func conferenceEnded(notification: VoxeetSDK.VTConferenceEndedNotification)
+  @objc func participantJoined(notification: VoxeetSDK.VTParticipantJoinedNotification)
+  @objc func participantLeft(notification: VoxeetSDK.VTParticipantLeftNotification)
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class VTSubscribeInvitation : VoxeetSDK.VTSubscribeBase {
+  @objc public init(conferenceAlias: Swift.String)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class VTTelemetryService : ObjectiveC.NSObject {
+  @objc public var platform: VoxeetSDK.VTTelemetryPlatform
+  @objc public var dolbyVoiceDebug: Swift.Bool
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class VTMediaDeviceService : ObjectiveC.NSObject {
+  @objc public var isDefaultFrontFacing: Swift.Bool {
+    @objc get
+  }
+  @objc public var isFrontCamera: Swift.Bool {
+    @objc get
+  }
+  @objc public func mediaStream(userID: Swift.String) -> WebRTC.MediaStream?
+  @objc public func screenShareMediaStream() -> WebRTC.MediaStream?
+  @objc public func attachMediaStream(_ stream: WebRTC.MediaStream, renderer: WebRTC.RTCVideoRenderer)
+  @objc public func unattachMediaStream(_ stream: WebRTC.MediaStream?, renderer: WebRTC.RTCVideoRenderer)
+  @objc public func switchDeviceSpeaker()
+  @objc public func switchDeviceSpeaker(forceBuiltInSpeaker: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @objc public func switchCamera(completion: (() -> Swift.Void)? = nil)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class VTVideoPresentation : ObjectiveC.NSObject {
+  @objc public var participant: VoxeetSDK.VTParticipant {
+    get
+  }
+  @objc public var url: Foundation.URL {
+    get
+  }
+  @objc public var timestamp: Foundation.TimeInterval {
+    get
+  }
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class VTParticipant : ObjectiveC.NSObject {
+  @objc public var id: Swift.String? {
+    get
+  }
+  @objc public var info: VoxeetSDK.VTParticipantInfo {
+    get
+  }
+  @objc public var type: VoxeetSDK.VTParticipantType {
+    get
+  }
+  @objc public var status: VoxeetSDK.VTParticipantStatus {
+    get
+  }
+  @objc public var streams: [WebRTC.MediaStream] {
+    get
+  }
+  @objc @available(*, deprecated, message: "With the new Dolby library, `angle` from 3D audio is no longer supported (will soon be obsolete).")
+  public var angle: Swift.Double {
+    get
+  }
+  @objc @available(*, deprecated, message: "With the new Dolby library, `distance` from 3D audio is no longer supported (will soon be obsolete).")
+  public var distance: Swift.Double {
+    get
+  }
+  @objc @available(*, deprecated, message: "With the new Dolby library, `mute` is no longer supported (will soon be obsolete). Use `VoxeetSDK.shared.conference.isMuted()` to gets the current mute state of the local participant.")
+  public var mute: Swift.Bool {
+    get
+  }
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public enum VTNotificationPushType : Swift.Int {
+  case none
+  case callKit
+  @available(*, deprecated, renamed: "none", message: "Standard notification aren't supported anymore by iOS 13 and CallKit.")
+  case standard
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class VTVideoPresentationService : ObjectiveC.NSObject {
+  @objc public var current: VoxeetSDK.VTVideoPresentation? {
+    get
+  }
+  @objc public var state: VoxeetSDK.VTVideoPresentationState {
+    get
+  }
+  @objc weak public var delegate: VoxeetSDK.VTVideoPresentationDelegate?
+  @objc deinit
+  @objc public func start(url: Foundation.URL, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func stop(completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func play(completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func pause(timestamp: Swift.Int, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func seek(timestamp: Swift.Int, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+}
+@available(*, deprecated, message: "With the new Dolby library, `VTConferenceCryptoDelegate` is no longer supported (will soon be obsolete).")
+@objc public protocol VTConferenceCryptoDelegate {
+  @available(*, deprecated, message: "With the new Dolby library, `VTConferenceCryptoDelegate` is no longer supported (will soon be obsolete).")
+  @objc func encrypt(type: Swift.Int, ssrc: Swift.Int, frame: Swift.UnsafePointer<Swift.UInt8>, frameSize: Swift.Int, encryptedFrame: Swift.UnsafeMutablePointer<Swift.UInt8>, encryptedFrameSize: Swift.Int) -> Swift.Int
+  @available(*, deprecated, message: "With the new Dolby library, `VTConferenceCryptoDelegate` is no longer supported (will soon be obsolete).")
+  @objc func getMaxCiphertextByteSize(type: Swift.Int, size: Swift.Int) -> Swift.Int
+  @available(*, deprecated, message: "With the new Dolby library, `VTConferenceCryptoDelegate` is no longer supported (will soon be obsolete).")
+  @objc func decrypt(type: Swift.Int, ssrc: Swift.Int, encryptedFrame: Swift.UnsafePointer<Swift.UInt8>, encryptedFrameSize: Swift.Int, frame: Swift.UnsafeMutablePointer<Swift.UInt8>, frameSize: Swift.Int) -> Swift.Int
+  @available(*, deprecated, message: "With the new Dolby library, `VTConferenceCryptoDelegate` is no longer supported (will soon be obsolete).")
+  @objc func getMaxPlaintextByteSize(type: Swift.Int, size: Swift.Int) -> Swift.Int
+}
+@objc @available(iOS, obsoleted: 1)
+@objcMembers public class VTAudioSound : ObjectiveC.NSObject {
+  @objc public var loop: Swift.Bool
+  @objc public var volume: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var angle: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var distance: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public init(fileURL: Foundation.URL) throws
+  @objc convenience public init(forResource name: Swift.String, ofType ext: Swift.String, bundle: Foundation.Bundle? = nil) throws
+  @objc deinit
+  @objc public func play(completion: (() -> Swift.Void)? = nil) throws
+  @objc public func pause()
+  @objc public func stop()
+  @objc public func currentTime() -> Swift.Double
+  @objc override dynamic public init()
+}
+@objc public protocol VTFilePresentationDelegate {
+  @objc func converted(fileConverted: VoxeetSDK.VTFileConverted)
+  @objc func started(filePresentation: VoxeetSDK.VTFilePresentation)
+  @objc func updated(filePresentation: VoxeetSDK.VTFilePresentation)
+  @objc func stopped(filePresentation: VoxeetSDK.VTFilePresentation)
+}
+@objc @_inheritsConvenienceInitializers open class VTVideoView : WebRTC.RTCEAGLVideoView {
+  @objc @IBInspectable public var mirrorEffect: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var contentFill: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var metal: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  weak public var mediaStream: WebRTC.MediaStream?
+  public var userID: Swift.String?
+  @objc override dynamic open func layoutSubviews()
+  public func attach(participant: VoxeetSDK.VTParticipant, stream: WebRTC.MediaStream)
+  public func unattach()
+  public func contentFill(_ fill: Swift.Bool, animated: Swift.Bool)
+  @objc override dynamic open func setSize(_ size: CoreGraphics.CGSize)
+  @objc override dynamic open func renderFrame(_ frame: WebRTC.RTCVideoFrame?)
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect, shader: WebRTC.RTCVideoViewShading)
+  @objc override dynamic public init(coder aDecoder: Foundation.NSCoder, shader: WebRTC.RTCVideoViewShading)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class VTConferenceCreatedNotification : VoxeetSDK.VTBaseNotification {
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class VTBaseNotification : ObjectiveC.NSObject {
+  @objc public var conferenceID: Swift.String {
+    get
+  }
+  @objc public var conferenceAlias: Swift.String {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class VoxeetSDK : ObjectiveC.NSObject {
+  @objc public static let shared: VoxeetSDK.VoxeetSDK
+  @objc final public let session: VoxeetSDK.VTSessionService
+  @objc final public let conference: VoxeetSDK.VTConferenceService
+  @objc final public let recording: VoxeetSDK.VTRecordingService
+  @objc final public let command: VoxeetSDK.VTCommandService
+  @objc final public let mediaDevice: VoxeetSDK.VTMediaDeviceService
+  @objc public var notification: VoxeetSDK.VTNotificationService
+  @objc final public let filePresentation: VoxeetSDK.VTFilePresentationService
+  @objc final public let videoPresentation: VoxeetSDK.VTVideoPresentationService
+  @objc final public let telemetry: VoxeetSDK.VTTelemetryService
+  @objc public var appGroup: Swift.String?
+  @objc public var preferredExtension: Swift.String?
+  @objc public func initialize(consumerKey: Swift.String, consumerSecret: Swift.String)
+  @objc public func initialize(accessToken: Swift.String, refreshTokenClosure: @escaping VoxeetSDK.VTSessionService.RefreshTokenHandler)
+  @objc public func region(_ region: Swift.String?)
+  @objc public func blacklist(externalID: Swift.String, ban: Swift.Bool, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class VTConferenceStatusNotification : VoxeetSDK.VTBaseNotification {
+  @objc final public let live: Swift.Bool
+  @objc final public let participants: [VoxeetSDK.VTParticipant]
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class VTSubscribeBase : ObjectiveC.NSObject {
+  @objc deinit
+}
+public let WebsocketDidConnectNotification: Swift.String
+public let WebsocketDidDisconnectNotification: Swift.String
+public let WebsocketDisconnectionErrorKeyName: Swift.String
+public enum CloseCode : Swift.UInt16 {
+  case normal
+  case goingAway
+  case protocolError
+  case protocolUnhandledType
+  case noStatusReceived
+  case encoding
+  case policyViolated
+  case messageTooBig
+  public typealias RawValue = Swift.UInt16
+  public init?(rawValue: Swift.UInt16)
+  public var rawValue: Swift.UInt16 {
+    get
+  }
+}
+public enum ErrorType : Swift.Error {
+  case outputStreamWriteError
+  case compressionError
+  case invalidSSLError
+  case writeTimeoutError
+  case protocolError
+  case upgradeError
+  case closeError
+  public static func == (a: VoxeetSDK.ErrorType, b: VoxeetSDK.ErrorType) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public struct WSError : Swift.Error {
+  public let type: VoxeetSDK.ErrorType
+  public let message: Swift.String
+  public let code: Swift.Int
+}
+public protocol WebSocketClient : AnyObject {
+  var delegate: VoxeetSDK.WebSocketDelegate? { get set }
+  var pongDelegate: VoxeetSDK.WebSocketPongDelegate? { get set }
+  var disableSSLCertValidation: Swift.Bool { get set }
+  var overrideTrustHostname: Swift.Bool { get set }
+  var desiredTrustHostname: Swift.String? { get set }
+  var sslClientCertificate: VoxeetSDK.SSLClientCertificate? { get set }
+  var security: VoxeetSDK.SSLTrustValidator? { get set }
+  var enabledSSLCipherSuites: [Security.SSLCipherSuite]? { get set }
+  var isConnected: Swift.Bool { get }
+  func connect()
+  func disconnect(forceTimeout: Foundation.TimeInterval?, closeCode: Swift.UInt16)
+  func write(string: Swift.String, completion: (() -> ())?)
+  func write(data: Foundation.Data, completion: (() -> ())?)
+  func write(ping: Foundation.Data, completion: (() -> ())?)
+  func write(pong: Foundation.Data, completion: (() -> ())?)
+}
+extension WebSocketClient {
+  public func write(string: Swift.String)
+  public func write(data: Foundation.Data)
+  public func write(ping: Foundation.Data)
+  public func write(pong: Foundation.Data)
+  public func disconnect()
+}
+public struct SSLSettings {
+  public let useSSL: Swift.Bool
+  public let disableCertValidation: Swift.Bool
+  public var overrideTrustHostname: Swift.Bool
+  public var desiredTrustHostname: Swift.String?
+  public let sslClientCertificate: VoxeetSDK.SSLClientCertificate?
+  public let cipherSuites: [Security.SSLCipherSuite]?
+}
+public protocol WSStreamDelegate : AnyObject {
+  func newBytesInStream()
+  func streamDidError(error: Swift.Error?)
+}
+public protocol WSStream {
+  var delegate: VoxeetSDK.WSStreamDelegate? { get set }
+  func connect(url: Foundation.URL, port: Swift.Int, timeout: Foundation.TimeInterval, ssl: VoxeetSDK.SSLSettings, completion: @escaping ((Swift.Error?) -> Swift.Void))
+  func write(data: Foundation.Data) -> Swift.Int
+  func read() -> Foundation.Data?
+  func cleanup()
+  func sslTrust() -> (trust: Security.SecTrust?, domain: Swift.String?)
+}
+@objc @_inheritsConvenienceInitializers open class FoundationStream : ObjectiveC.NSObject, VoxeetSDK.WSStream, Foundation.StreamDelegate {
+  weak public var delegate: VoxeetSDK.WSStreamDelegate?
+  public var enableSOCKSProxy: Swift.Bool
+  public func connect(url: Foundation.URL, port: Swift.Int, timeout: Foundation.TimeInterval, ssl: VoxeetSDK.SSLSettings, completion: @escaping ((Swift.Error?) -> Swift.Void))
+  public func write(data: Foundation.Data) -> Swift.Int
+  public func read() -> Foundation.Data?
+  public func cleanup()
+  public func sslTrust() -> (trust: Security.SecTrust?, domain: Swift.String?)
+  @objc open func stream(_ aStream: Foundation.Stream, handle eventCode: Foundation.Stream.Event)
+  @objc deinit
+  @objc override dynamic public init()
+}
+public protocol WebSocketDelegate : AnyObject {
+  func websocketDidConnect(socket: VoxeetSDK.WebSocketClient)
+  func websocketDidDisconnect(socket: VoxeetSDK.WebSocketClient, error: Swift.Error?)
+  func websocketDidReceiveMessage(socket: VoxeetSDK.WebSocketClient, text: Swift.String)
+  func websocketDidReceiveData(socket: VoxeetSDK.WebSocketClient, data: Foundation.Data)
+}
+public protocol WebSocketPongDelegate : AnyObject {
+  func websocketDidReceivePong(socket: VoxeetSDK.WebSocketClient, data: Foundation.Data?)
+}
+public protocol WebSocketAdvancedDelegate : AnyObject {
+  func websocketDidConnect(socket: VoxeetSDK.WebSocket)
+  func websocketDidDisconnect(socket: VoxeetSDK.WebSocket, error: Swift.Error?)
+  func websocketDidReceiveMessage(socket: VoxeetSDK.WebSocket, text: Swift.String, response: VoxeetSDK.WebSocket.WSResponse)
+  func websocketDidReceiveData(socket: VoxeetSDK.WebSocket, data: Foundation.Data, response: VoxeetSDK.WebSocket.WSResponse)
+  func websocketHttpUpgrade(socket: VoxeetSDK.WebSocket, request: Swift.String)
+  func websocketHttpUpgrade(socket: VoxeetSDK.WebSocket, response: Swift.String)
+}
+@objc open class WebSocket : ObjectiveC.NSObject, Foundation.StreamDelegate, VoxeetSDK.WebSocketClient, VoxeetSDK.WSStreamDelegate {
+  public enum OpCode : Swift.UInt8 {
+    case continueFrame
+    case textFrame
+    case binaryFrame
+    case connectionClose
+    case ping
+    case pong
+    public typealias RawValue = Swift.UInt8
+    public init?(rawValue: Swift.UInt8)
+    public var rawValue: Swift.UInt8 {
+      get
+    }
+  }
+  public static let ErrorDomain: Swift.String
+  public var callbackQueue: Dispatch.DispatchQueue
+  @_hasMissingDesignatedInitializers public class WSResponse {
+    public var code: VoxeetSDK.WebSocket.OpCode
+    public var frameCount: Swift.Int
+    public var buffer: Foundation.NSMutableData?
+    final public let firstFrame: Foundation.Date
+    @objc deinit
+  }
+  weak public var delegate: VoxeetSDK.WebSocketDelegate?
+  weak public var advancedDelegate: VoxeetSDK.WebSocketAdvancedDelegate?
+  weak public var pongDelegate: VoxeetSDK.WebSocketPongDelegate?
+  public var onConnect: (() -> Swift.Void)?
+  public var onDisconnect: ((Swift.Error?) -> Swift.Void)?
+  public var onText: ((Swift.String) -> Swift.Void)?
+  public var onData: ((Foundation.Data) -> Swift.Void)?
+  public var onPong: ((Foundation.Data?) -> Swift.Void)?
+  public var onHttpResponseHeaders: (([Swift.String : Swift.String]) -> Swift.Void)?
+  public var disableSSLCertValidation: Swift.Bool
+  public var overrideTrustHostname: Swift.Bool
+  public var desiredTrustHostname: Swift.String?
+  public var sslClientCertificate: VoxeetSDK.SSLClientCertificate?
+  public var enableCompression: Swift.Bool
+  public var security: VoxeetSDK.SSLTrustValidator?
+  public var enabledSSLCipherSuites: [Security.SSLCipherSuite]?
+  public var isConnected: Swift.Bool {
+    get
+  }
+  public var request: Foundation.URLRequest
+  public var currentURL: Foundation.URL {
+    get
+  }
+  public var respondToPingWithPong: Swift.Bool
+  public init(request: Foundation.URLRequest, protocols: [Swift.String]? = nil, stream: VoxeetSDK.WSStream = FoundationStream())
+  convenience public init(url: Foundation.URL, protocols: [Swift.String]? = nil)
+  convenience public init(url: Foundation.URL, writeQueueQOS: Foundation.QualityOfService, protocols: [Swift.String]? = nil)
+  open func connect()
+  open func disconnect(forceTimeout: Foundation.TimeInterval? = nil, closeCode: Swift.UInt16 = CloseCode.normal.rawValue)
+  open func write(string: Swift.String, completion: (() -> ())? = nil)
+  open func write(data: Foundation.Data, completion: (() -> ())? = nil)
+  open func write(ping: Foundation.Data, completion: (() -> ())? = nil)
+  open func write(pong: Foundation.Data, completion: (() -> ())? = nil)
+  public func newBytesInStream()
+  public func streamDidError(error: Swift.Error?)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class VTInvitationReceivedNotification : VoxeetSDK.VTBaseNotification {
+  @objc final public let participant: VoxeetSDK.VTParticipant
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class VTJoinOptionsConstraints : ObjectiveC.NSObject {
+  @objc public var audio: Swift.Bool
+  @objc public var video: Swift.Bool
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public enum VTTelemetryPlatform : Swift.Int {
+  case native
+  case cordova
+  case reactNative
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class VTSubscribeConferenceEnded : VoxeetSDK.VTSubscribeBase {
+  @objc public init(conferenceAlias: Swift.String)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class VTSubscribeParticipantJoined : VoxeetSDK.VTSubscribeBase {
+  @objc public init(conferenceAlias: Swift.String)
+  @objc deinit
+}
+@objc public protocol VTCommandDelegate {
+  @objc func received(participant: VoxeetSDK.VTParticipant, message: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class VTConferenceService : ObjectiveC.NSObject {
+  @objc weak public var delegate: VoxeetSDK.VTConferenceDelegate?
+  @objc public var current: VoxeetSDK.VTConference? {
+    get
+  }
+  @objc public var mode: VoxeetSDK.VTConferenceMode {
+    get
+  }
+  @objc public var defaultBuiltInSpeaker: Swift.Bool
+  @objc public var defaultVideo: Swift.Bool
+  @objc @available(*, deprecated, message: "With the new Dolby library, 3D audio is automatically enabled with `dolbyVoice` conferences (will soon be obsolete).")
+  public var audio3D: Swift.Bool
+  @objc @available(iOS, obsoleted: 1, message: "With the new Dolby library, video constraints are no longer supported.")
+  public var constraints: [Swift.String : Swift.String]?
+  @objc @available(*, deprecated, message: "With the new Dolby library, `cryptoDelegate` is no longer supported (will soon be obsolete).")
+  weak public var cryptoDelegate: VoxeetSDK.VTConferenceCryptoDelegate?
+  @objc deinit
+  @objc public func create(options: VoxeetSDK.VTConferenceOptions? = nil, success: ((VoxeetSDK.VTConference) -> Swift.Void)?, fail: ((Foundation.NSError) -> Swift.Void)?)
+  @objc public func join(conference: VoxeetSDK.VTConference, options: VoxeetSDK.VTJoinOptions? = nil, success: ((VoxeetSDK.VTConference) -> Swift.Void)? = nil, fail: ((Foundation.NSError) -> Swift.Void)? = nil)
+  @objc public func listen(conference: VoxeetSDK.VTConference, success: ((VoxeetSDK.VTConference) -> Swift.Void)? = nil, fail: ((Foundation.NSError) -> Swift.Void)? = nil)
+  @objc public func demo(completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func fetch(conferenceID: Swift.String, completion: (VoxeetSDK.VTConference) -> Swift.Void)
+  @objc public func leave(completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func status(conference: VoxeetSDK.VTConference, success: (([Swift.String : Any]?) -> Swift.Void)?, fail: ((Foundation.NSError) -> Swift.Void)?)
+  @objc public func history(conference: VoxeetSDK.VTConference, success: (([Any]?) -> Swift.Void)?, fail: ((Foundation.NSError) -> Swift.Void)?)
+  @objc public func histories(nbEvents: Swift.Int, lastConferenceID: Swift.String? = nil, lastConferenceTimestamp: Swift.Int64, success: (([Any]?) -> Swift.Void)?, fail: ((Foundation.NSError) -> Swift.Void)?)
+  @objc public func histories(nbEvents: Swift.Int, success: (([Any]?) -> Swift.Void)?, fail: ((Foundation.NSError) -> Swift.Void)?)
+  @objc public func replay(conference: VoxeetSDK.VTConference, offset: Swift.Int, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func replay(conference: VoxeetSDK.VTConference, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func mute(_ isMuted: Swift.Bool, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func mute(participant: VoxeetSDK.VTParticipant, isMuted: Swift.Bool, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func muteOutput(_ isMuted: Swift.Bool, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func isMuted() -> Swift.Bool
+  @objc public func audioLevel(participant: VoxeetSDK.VTParticipant) -> Swift.Float
+  @objc public func isSpeaking(participant: VoxeetSDK.VTParticipant) -> Swift.Bool
+  @objc public func startAudio(participant: VoxeetSDK.VTParticipant? = nil, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func stopAudio(participant: VoxeetSDK.VTParticipant? = nil, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func startVideo(participant: VoxeetSDK.VTParticipant? = nil, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func startVideo(participant: VoxeetSDK.VTParticipant? = nil, isDefaultFrontFacing: Swift.Bool, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func stopVideo(participant: VoxeetSDK.VTParticipant? = nil, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc @available(iOS 11.0, *)
+  public func startScreenShare(completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc @available(iOS 11.0, *)
+  public func startScreenShare(broadcast: Swift.Bool, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc @available(iOS 11.0, *)
+  public func stopScreenShare(completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func localStats(participant: VoxeetSDK.VTParticipant) -> [[Swift.String : Any]]?
+  @objc public func localStats() -> [Swift.String : [[Swift.String : Any]]]?
+  @objc public func simulcast(requested: [VoxeetSDK.VTParticipantQuality], completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func audioProcessing(enable: Swift.Bool)
+}
+extension VTConferenceService : WebRTC.MediaEngineDelegate {
+  @objc dynamic public func audioRouteChanged(_ route: Foundation.NSNumber)
+  @objc dynamic public func sessionCreated(forPeer peerId: Swift.String, withType type: Swift.String, andSdp sdp: Swift.String)
+  @objc dynamic public func iceGatheringCompleted(forPeer peerId: Swift.String, withCandidates candidates: [[Swift.String : Any]])
+  @objc dynamic public func printTrace(withLevel level: Swift.Int32, withMessage message: Swift.UnsafePointer<Swift.Int8>, ofLength length: Swift.Int32)
+  @objc dynamic public func callBack(onChannel channel: Swift.Int32, withErrorCode errCode: Swift.Int32)
+  @objc dynamic public func streamAdded(forPeer peerId: Swift.String, with mediaStream: WebRTC.MediaStream)
+  @objc dynamic public func streamUpdated(forPeer peerId: Swift.String, with mediaStream: WebRTC.MediaStream)
+  @objc dynamic public func streamRemoved(forPeer peerId: Swift.String, with mediaStream: WebRTC.MediaStream)
+  @objc dynamic public func screenStreamAdded(forPeer peerId: Swift.String, with mediaStream: WebRTC.MediaStream)
+  @objc dynamic public func screenStreamRemoved(forPeer peerId: Swift.String, with mediaStream: WebRTC.MediaStream)
+  @objc dynamic public func connectionError(forPeer peerId: Swift.String, errorType type: Swift.String)
+}
+extension VTConferenceService {
+  @objc @available(*, deprecated, renamed: "REPLACE_CONFERENCE_BY_NOTIFICATION.decline(conference:completion:)", message: "You can now use the notification service object to decline a call `VoxeetSDK.shared.notification.decline`.")
+  dynamic public func decline(conference: VoxeetSDK.VTConference, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc @available(*, deprecated, message: "With the new Dolby library, setting participant's 3D audio position is no longer supported (will soon be obsolete).")
+  dynamic public func position(participant: VoxeetSDK.VTParticipant, angle: Swift.Double, distance: Swift.Double)
+  @objc @available(iOS, obsoleted: 1, message: "With the new Dolby library, setting participant's 3D audio position is no longer supported.")
+  dynamic public func position(participant: VoxeetSDK.VTParticipant, angle: Swift.Double)
+  @objc @available(iOS, obsoleted: 1, message: "With the new Dolby library, setting participant's 3D audio position is no longer supported.")
+  dynamic public func position(participant: VoxeetSDK.VTParticipant, distance: Swift.Double)
+  @objc @available(iOS, obsoleted: 1, renamed: "REPLACE_CONFERENCE_BY_NOTIFICATION.subscribe(subscription:completion:)", message: "You can now use the notification service object to subscribe `VoxeetSDK.shared.notification.subscribe`.")
+  dynamic public func statusSubscribe(conference: VoxeetSDK.VTConference, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc @available(iOS, obsoleted: 1, renamed: "REPLACE_CONFERENCE_BY_NOTIFICATION.unsubscribe(subscription:completion:)", message: "You can now use the notification service object to subscribe `VoxeetSDK.shared.notification.unsubscribe`.")
+  dynamic public func statusUnsubscribe(conference: VoxeetSDK.VTConference, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc @available(iOS, obsoleted: 1)
+  dynamic public func subscribe(conferenceAlias confAlias: Swift.String, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc @available(iOS, obsoleted: 1)
+  dynamic public func unsubscribe(conferenceAlias confAlias: Swift.String, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+}
+public struct SSLClientCertificateError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String?
+}
+public class SSLClientCertificate {
+  convenience public init(pkcs12Path: Swift.String, password: Swift.String) throws
+  public init(identity: Security.SecIdentity, identityCertificate: Security.SecCertificate)
+  convenience public init(pkcs12Url: Foundation.URL, password: Swift.String) throws
+  public init(pkcs12Url: Foundation.URL, importOptions: CoreFoundation.CFDictionary) throws
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class VTRecordingService : ObjectiveC.NSObject {
+  @objc public func start(fireInterval: Swift.Int = 0, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func stop(completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class VTJoinOptions : ObjectiveC.NSObject {
+  @objc public var constraints: VoxeetSDK.VTJoinOptionsConstraints
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public enum VTQuality : Swift.Int {
+  case sd
+  case md
+  case hd
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @objcMembers public class VTParticipantQuality : ObjectiveC.NSObject {
+  @objc public var id: Swift.String
+  @objc public var quality: VoxeetSDK.VTQuality
+  @objc public init(quality: VoxeetSDK.VTQuality)
+  @objc public init(id: Swift.String, quality: VoxeetSDK.VTQuality)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class VTParticipantInfo : ObjectiveC.NSObject {
+  @objc public var externalID: Swift.String?
+  @objc public var name: Swift.String?
+  @objc public var avatarURL: Swift.String?
+  @objc override dynamic public init()
+  @objc public init(externalID: Swift.String?, name: Swift.String?, avatarURL: Swift.String?)
+  @objc deinit
+}
+@objc public enum VTConferenceMode : Swift.Int {
+  case standard
+  case listen
+  case replay
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol SSLTrustValidator {
+  func isValid(_ trust: Security.SecTrust, domain: Swift.String?) -> Swift.Bool
+}
+open class SSLCert {
+  public init(data: Foundation.Data)
+  public init(key: Security.SecKey)
+  @objc deinit
+}
+open class SSLSecurity : VoxeetSDK.SSLTrustValidator {
+  public var validatedDN: Swift.Bool
+  public var validateEntireChain: Swift.Bool
+  convenience public init(usePublicKeys: Swift.Bool = false)
+  public init(certs: [VoxeetSDK.SSLCert], usePublicKeys: Swift.Bool)
+  open func isValid(_ trust: Security.SecTrust, domain: Swift.String?) -> Swift.Bool
+  public func extractPublicKey(_ data: Foundation.Data) -> Security.SecKey?
+  public func extractPublicKey(_ cert: Security.SecCertificate, policy: Security.SecPolicy) -> Security.SecKey?
+  public func certificateChain(_ trust: Security.SecTrust) -> [Foundation.Data]
+  public func publicKeyChain(_ trust: Security.SecTrust) -> [Security.SecKey]
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class VTConferenceEndedNotification : VoxeetSDK.VTBaseNotification {
+  @objc deinit
+}
+@objc public enum VTParticipantStatus : Swift.Int {
+  case reserved
+  case inactive
+  case decline
+  case connecting
+  case connected
+  case left
+  case warning
+  case error
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension NSNotification.Name {
+  public static let VTParticipantAdded: Foundation.Notification.Name
+  public static let VTParticipantUpdated: Foundation.Notification.Name
+  public static let VTParticipantSwitched: Foundation.Notification.Name
+  public static let VTConferenceStatusUpdated: Foundation.Notification.Name
+  public static let VTConferenceStatusUpdatedEvent: Foundation.Notification.Name
+  public static let VTConferenceDestroyed: Foundation.Notification.Name
+  public static let VTConferenceMessageReceived: Foundation.Notification.Name
+  public static let VTOwnParticipantSwitched: Foundation.Notification.Name
+  public static let VTConferenceStats: Foundation.Notification.Name
+  public static let VTQualityIndicators: Foundation.Notification.Name
+  public static let VTOwnUserInvited: Foundation.Notification.Name
+  public static let VTInvitationReceived: Foundation.Notification.Name
+  public static let VTFileConverted: Foundation.Notification.Name
+  public static let VTFilePresentationStarted: Foundation.Notification.Name
+  public static let VTFilePresentationUpdated: Foundation.Notification.Name
+  public static let VTFilePresentationStopped: Foundation.Notification.Name
+  public static let VTVideoPresentationStarted: Foundation.Notification.Name
+  public static let VTVideoPresentationStopped: Foundation.Notification.Name
+  public static let VTVideoPresentationPlayed: Foundation.Notification.Name
+  public static let VTVideoPresentationPaused: Foundation.Notification.Name
+  public static let VTVideoPresentationSought: Foundation.Notification.Name
+}
+extension NSNotification.Name {
+  public static let VTCallKitStarted: Foundation.Notification.Name
+  public static let VTCallKitSwapped: Foundation.Notification.Name
+  public static let VTCallKitEnded: Foundation.Notification.Name
+  public static let VTCallKitMuteToggled: Foundation.Notification.Name
+}
+@objc public enum VTSessionState : Swift.Int {
+  case connecting
+  case connected
+  case reconnecting
+  case disconnected
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class VTSessionService : ObjectiveC.NSObject {
+  @objc public var participant: VoxeetSDK.VTParticipant? {
+    get
+  }
+  public typealias RefreshTokenHandler = ((@escaping (Swift.String) -> Swift.Void) -> Swift.Void)
+  @objc public var pushToken: Swift.String?
+  @objc public var state: VoxeetSDK.VTSessionState {
+    get
+  }
+  @objc public var delegate: VoxeetSDK.VTSessionDelegate?
+  @objc public func open(info: VoxeetSDK.VTParticipantInfo? = nil, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func close(completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class VTConference : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    get
+  }
+  @objc public var alias: Swift.String {
+    get
+  }
+  @objc public var isNew: Swift.Bool {
+    get
+  }
+  @objc public var participants: [VoxeetSDK.VTParticipant] {
+    get
+  }
+  @objc public var params: VoxeetSDK.VTConferenceParameters {
+    get
+  }
+  @objc public var status: VoxeetSDK.VTConferenceStatus {
+    @objc get
+  }
+  @objc public var pinCode: Swift.String? {
+    get
+  }
+  @objc deinit
+}
+@objc public enum VTVideoPresentationState : Swift.Int {
+  case stopped
+  case playing
+  case paused
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class VTFileConverted : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    get
+  }
+  @objc public var imageCount: Swift.Int {
+    get
+  }
+  @objc public var ownerID: Swift.String? {
+    get
+  }
+  @objc public var name: Swift.String? {
+    get
+  }
+  @objc public var size: Foundation.NSNumber? {
+    get
+  }
+  @objc public init(id: Swift.String, imageCount: Swift.Int)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class VTConferenceOptions : ObjectiveC.NSObject {
+  @objc public var alias: Swift.String?
+  @objc public var params: VoxeetSDK.VTConferenceParameters {
+    get
+  }
+  @objc public var pinCode: Foundation.NSNumber?
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class VTFilePresentationService : ObjectiveC.NSObject {
+  @objc public var current: VoxeetSDK.VTFilePresentation? {
+    get
+  }
+  @objc weak public var delegate: VoxeetSDK.VTFilePresentationDelegate?
+  @objc deinit
+  @objc public func convert(path: Foundation.URL, progress: ((Swift.Double) -> Swift.Void)? = nil, success: ((VoxeetSDK.VTFileConverted) -> Swift.Void)?, fail: ((Foundation.NSError) -> Swift.Void)?)
+  @objc public func start(fileConverted: VoxeetSDK.VTFileConverted, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func update(page: Swift.Int, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func stop(completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public func image(page: Swift.Int) -> Foundation.URL?
+  @objc public func thumbnail(page: Swift.Int) -> Foundation.URL?
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class VTParticipantLeftNotification : VoxeetSDK.VTBaseNotification {
+  @objc final public let participant: VoxeetSDK.VTParticipant
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class VTFilePresentation : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    get
+  }
+  @objc public var owner: VoxeetSDK.VTParticipant {
+    get
+  }
+  @objc public var imageCount: Swift.Int {
+    get
+  }
+  @objc public var position: Swift.Int {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class VTParticipantJoinedNotification : VoxeetSDK.VTBaseNotification {
+  @objc final public let participant: VoxeetSDK.VTParticipant
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class VTConferenceParameters : ObjectiveC.NSObject {
+  @objc public var liveRecording: Swift.Bool
+  @objc public var rtcpMode: Swift.String?
+  @objc public var stats: Swift.Bool
+  @objc public var ttl: Foundation.NSNumber?
+  @objc public var videoCodec: Swift.String?
+  @objc public var dolbyVoice: Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum VTParticipantType : Swift.Int {
+  case none
+  case user
+  case listener
+  case pstn
+  case mixer
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum VTConferenceStatus : Swift.Int {
+  case creating
+  case created
+  case joining
+  case joined
+  case leaving
+  case left
+  case ended
+  case destroyed
+  case error
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class VTSubscribeParticipantLeft : VoxeetSDK.VTSubscribeBase {
+  @objc public init(conferenceAlias: Swift.String)
+  @objc deinit
+}
+@objc public protocol VTVideoPresentationDelegate {
+  @objc func started(videoPresentation: VoxeetSDK.VTVideoPresentation)
+  @objc func stopped(videoPresentation: VoxeetSDK.VTVideoPresentation)
+  @objc func played(videoPresentation: VoxeetSDK.VTVideoPresentation)
+  @objc func paused(videoPresentation: VoxeetSDK.VTVideoPresentation)
+  @objc func sought(videoPresentation: VoxeetSDK.VTVideoPresentation)
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class VTSubscribeConferenceCreated : VoxeetSDK.VTSubscribeBase {
+  @objc public init(conferenceAlias: Swift.String)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class VTNotificationPushManager : ObjectiveC.NSObject {
+  @objc public var type: VoxeetSDK.VTNotificationPushType {
+    @objc get
+    @objc set
+  }
+  @objc public var includesCallsInRecents: Swift.Bool
+  @objc public var incomingCallTimeout: Swift.Double
+  @objc deinit
+  @objc override dynamic public init()
+}
+extension VTNotificationPushManager : PushKit.PKPushRegistryDelegate {
+  @objc dynamic public func pushRegistry(_ registry: PushKit.PKPushRegistry, didUpdate pushCredentials: PushKit.PKPushCredentials, for type: PushKit.PKPushType)
+  @objc dynamic public func pushRegistry(_ registry: PushKit.PKPushRegistry, didReceiveIncomingPushWith payload: PushKit.PKPushPayload, for type: PushKit.PKPushType)
+  @objc dynamic public func pushRegistry(_ registry: PushKit.PKPushRegistry, didReceiveIncomingPushWith payload: PushKit.PKPushPayload, for type: PushKit.PKPushType, completion: @escaping () -> Swift.Void)
+  @objc dynamic public func pushRegistry(_ registry: PushKit.PKPushRegistry, didInvalidatePushTokenFor type: PushKit.PKPushType)
+}
+@available(iOS 10, *)
+extension VTNotificationPushManager : UserNotifications.UNUserNotificationCenterDelegate {
+  @objc dynamic public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification, withCompletionHandler completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
+  @objc dynamic public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
+}
+@objc public protocol VTConferenceDelegate {
+  @objc func statusUpdated(status: VoxeetSDK.VTConferenceStatus)
+  @objc func participantAdded(participant: VoxeetSDK.VTParticipant)
+  @objc func participantUpdated(participant: VoxeetSDK.VTParticipant)
+  @objc func streamAdded(participant: VoxeetSDK.VTParticipant, stream: WebRTC.MediaStream)
+  @objc func streamUpdated(participant: VoxeetSDK.VTParticipant, stream: WebRTC.MediaStream)
+  @objc func streamRemoved(participant: VoxeetSDK.VTParticipant, stream: WebRTC.MediaStream)
+}
+extension VoxeetSDK.VTNotificationPushType : Swift.Equatable {}
+extension VoxeetSDK.VTNotificationPushType : Swift.Hashable {}
+extension VoxeetSDK.VTNotificationPushType : Swift.RawRepresentable {}
+extension VoxeetSDK.CloseCode : Swift.Equatable {}
+extension VoxeetSDK.CloseCode : Swift.Hashable {}
+extension VoxeetSDK.CloseCode : Swift.RawRepresentable {}
+extension VoxeetSDK.ErrorType : Swift.Equatable {}
+extension VoxeetSDK.ErrorType : Swift.Hashable {}
+extension VoxeetSDK.WebSocket.OpCode : Swift.Equatable {}
+extension VoxeetSDK.WebSocket.OpCode : Swift.Hashable {}
+extension VoxeetSDK.WebSocket.OpCode : Swift.RawRepresentable {}
+extension VoxeetSDK.VTTelemetryPlatform : Swift.Equatable {}
+extension VoxeetSDK.VTTelemetryPlatform : Swift.Hashable {}
+extension VoxeetSDK.VTTelemetryPlatform : Swift.RawRepresentable {}
+extension VoxeetSDK.VTQuality : Swift.Equatable {}
+extension VoxeetSDK.VTQuality : Swift.Hashable {}
+extension VoxeetSDK.VTQuality : Swift.RawRepresentable {}
+extension VoxeetSDK.VTConferenceMode : Swift.Equatable {}
+extension VoxeetSDK.VTConferenceMode : Swift.Hashable {}
+extension VoxeetSDK.VTConferenceMode : Swift.RawRepresentable {}
+extension VoxeetSDK.VTParticipantStatus : Swift.Equatable {}
+extension VoxeetSDK.VTParticipantStatus : Swift.Hashable {}
+extension VoxeetSDK.VTParticipantStatus : Swift.RawRepresentable {}
+extension VoxeetSDK.VTSessionState : Swift.Equatable {}
+extension VoxeetSDK.VTSessionState : Swift.Hashable {}
+extension VoxeetSDK.VTSessionState : Swift.RawRepresentable {}
+extension VoxeetSDK.VTVideoPresentationState : Swift.Equatable {}
+extension VoxeetSDK.VTVideoPresentationState : Swift.Hashable {}
+extension VoxeetSDK.VTVideoPresentationState : Swift.RawRepresentable {}
+extension VoxeetSDK.VTParticipantType : Swift.Equatable {}
+extension VoxeetSDK.VTParticipantType : Swift.Hashable {}
+extension VoxeetSDK.VTParticipantType : Swift.RawRepresentable {}
+extension VoxeetSDK.VTConferenceStatus : Swift.Equatable {}
+extension VoxeetSDK.VTConferenceStatus : Swift.Hashable {}
+extension VoxeetSDK.VTConferenceStatus : Swift.RawRepresentable {}

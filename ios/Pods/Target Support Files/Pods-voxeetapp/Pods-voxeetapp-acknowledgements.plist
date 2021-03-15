@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>FooterText</key>
+			<string>This application makes use of the following third party libraries:</string>
+			<key>Title</key>
+			<string>Acknowledgements</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2006-2011, the V8 project authors. All rights reserved.
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above
+      copyright notice, this list of conditions and the following
+      disclaimer in the documentation and/or other materials provided
+      with the distribution.
+    * Neither the name of Google Inc. nor the names of its
+      contributors may be used to endorse or promote products derived
+      from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</string>
+			<key>License</key>
+			<string>MIT</string>
+			<key>Title</key>
+			<string>DoubleConversion</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      "License" shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      "Licensor" shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      "Legal Entity" shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      "control" means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      "You" (or "Your") shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      "Source" form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      "Object" form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      "Work" shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      "Derivative Works" shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      "Contribution" shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, "submitted"
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as "Not a Contribution."
+
+      "Contributor" shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a "NOTICE" text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+
+Files in folly/external/farmhash licensed as follows
+
+    Copyright (c) 2014 Google, Inc.
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+    THE SOFTWARE.
+</string>
+			<key>License</key>
+			<string>Apache License, Version 2.0</string>
+			<key>Title</key>
+			<string>Folly</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>The MIT License (MIT)
+
+Copyright (c) 2016 Krzysztof Magiera
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</string>
+			<key>License</key>
+			<string>MIT</string>
+			<key>Title</key>
+			<string>RNGestureHandler</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>The MIT License (MIT)
+
+Copyright (c) 2016 Krzysztof Magiera
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</string>
+			<key>License</key>
+			<string>MIT</string>
+			<key>Title</key>
+			<string>RNReanimated</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>The MIT License (MIT)
+
+Copyright (c) 2018 Krzysztof Magiera
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</string>
+			<key>License</key>
+			<string>MIT</string>
+			<key>Title</key>
+			<string>RNScreens</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</string>
+			<key>License</key>
+			<string>MIT</string>
+			<key>Title</key>
+			<string>React</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</string>
+			<key>License</key>
+			<string>MIT</string>
+			<key>Title</key>
+			<string>React-Core</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright (c) 2009-2020 Olivier Poitrey rs@dailymotion.com
+ 
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+ 
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+ 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+</string>
+			<key>License</key>
+			<string>MIT</string>
+			<key>Title</key>
+			<string>SDWebImage</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>%PDF-1.4
+%쏢
+5 0 obj
+&lt;&lt;/Length 6 0 R/Filter /FlateDecode&gt;&gt;
+stream
+x]YF[[VrK-[򪫖-w"kO23yKx2  YU9$?.um%nq/;wu%}ݟ??jǿ~Vկu{u5Mc=tkkJۿ&gt;:~zнSU閟pM_՝jFWwo8]ݣǓk1VPWj}^ҏ/5Q&amp;G?ym]zfzu5vu۪ah=ئn`AQ5X!Uèh޳J}h^Nʫ3[Zzx/nQ5UtZ]˞{Ykuꁍ1X4^VOפٯeWS?]]ƭΨuyc36W!WM[kTzGIgloSdfv#C&gt;F/DllHuS
+`kQ&gt;MKuY{j){5k&gt;)KzWVL:4KRjٮ0Mϖ]tUfȺ)&lt;Ywgz`ypʾ
+-By޴C_VnD]5r&amp;==nq\O;	=PNZAi]ܵ6\`Tt;Oh (&amp;Y-Gp,=#]l*sO{:M-&amp;uzG 6zߌgXvϱ3MXfP,
+!X\U;F7(0T5VJm7z|D$1rjڧTfU
+GcSABhvF0N&gt;uJ_"Ǡ9YhȾѡНB:iYEHˆ?&lt; ;ZHk+`c\\q\?CLt?ڼ3M{rO5 
+)~ѐjx.Y 4=p`KW#LYvM]r0Ū	­45=a0^,s`O;W?@&amp;1b(sB]H	{[Ma,i2rg&gt;`= ʹP"䛲krqI {k_,0t=$Qs	z ]{AΨ1,}O2B/(h0.2l1bil-ĨE?j4N%-|q40:$bl_	!]&gt;~(&amp;ztғt4![R7 *O[a5C7&gt;pG}VRajZeLQY)quME&lt;.z`\	GY}c~:44DЧFEa
+ \TJkUìӬ/ޱ%?_vml&gt;1=,ЫeD'V?=}j%$g.2v8|9cUWBaC[Ws&amp;gX;?~Hh(4
+uJa,&gt;u#^A;SN?ÒσywX7~dK-{d@pY#}N=+k`fzwOW.j}7;vUi qmsJޠn΂*Bm˹z_lO r~e}ڶutuwn}buy)%^/	fDۈPGL|]rgN :E\1Oz-}O}/B?ތ賭p%&lt;gil!g?uH))՟D:/irw،͓ x񻌾FԐa+NW٘	&gt;+4Hm&gt;uXƨ.OmRm`N=o&amp;t)+SΙF=z\9eo=Cs9e==q~0ГW\$Q#~JgD&gt;_3}yQ5}n}{Vtggi{Iu~E$ۓk"K`_Y
+vi,=xI޿vb&lt;&gt;S~JȾf04P"ᗌDUy9F;XZk!uzh-^\J
+~!*p2T`yQ2swzsZ-z׹tQ+ӯ_^اȷ;0CnK&amp;x]J~`\&amp;UtrMBs^U^1&lt;&lt;z{ųU@9JZPJIV4.&gt;(E |L1m[5	AirCksg)s.`їSMRMBZNYNQnǑIug+!Qv^ՈQ윝ҍ5=|qozF6|&gt;ɨd4YSP@iغ-iN}rUhF9OOeJܵ-җچH˅} ą,,)Y0OA}$1	?&gt;༲oWh"Sz&amp;,@Q&gt;3Ckb|Le*[s[L`c"lj6uohL::om'GĀShi"'F@Qu\X3СSVKC9J쇦6o{HuHSff4D^Fl'׭4NIC/Q Jv.eF6i#DCNרi()JDBw.}m$hّɋH
+'ٗ˩9bisD&lt;QDՎHI0`W^+"`t`o+oE_FFVCJHI#{z到j\?n3@Ĳt	3E᠟Gl}  !bblbbu,d4A94T)'ecO 	OW"VQwoV]*a\.J6S'Ar֊SN4#y/"p#_o:xt/2&gt;!KQMAGaD!Qģ-}̀Kˑ֞VLW/H5!nCH1&amp;e'"ݙfbf1DSJɉ"/"'tUYw|)EB}S̍͘7ɹEFd e4婨gl?CŨ#a(1QP(g-NF^ࣩjwhoA;MvRn&gt;SQr?LjcN.!DHHƟl2&amp;3l£ՃҶ)ZxY2l/tV}	Cg(7YfbH;)z.0jђ7-S;#0xT J(xq+l-
+)Ob#:k i) &amp;ehȺp;i܁M}\LI(kck&gt;5=Dz]eVVr4ڱʚzje-^MVuZ"&gt;][i]OoIB|\A7Zh)Y`tm(,[f(T#	/nm|񹋩9nN)=0u/^M:	˥`ytjTa2yUO(
+\jKTf =r&lt;LB~܎2p|X7|ud:`ݸ9ξ-qlj~R=k2s썍#hf%,T1-|"%ux񙔴kI׈P&lt;]fz1׮S{צ,]͋ir=["&lt;deM,DZMc &lt;"
+299gؾ.&amp;E$ŵH_Țܶ2Yi]xY6XukjOWmɏjYG/m8st.`rh$l筕atZyz^Hh	+	g9 yC)'&amp;zi5L'CG7*)yT6ieGȁdgm⦴ޘ5EL/I3
+Lj!6dd,]f+HRP4Xᵏ7gEOl
+&amp;6%,(&amp;0fi-rao$6;ҳ50lf(W`iukـw#e$mVN=ow;r	8 :AL؁JwK`2$2L; R3ZSf#
+5v W~\b| 9$V󨃀c(J4[I pB'4M'C&amp;Sk` C׀:sbRUK!!2t3{[K:l Q)ȏfkEEGȥ4X)!qLrT!Q5d4I  HG	Q mz75a`	We&gt;#d!eY
+r0dѠE@3HVkR!2|2!O7߮ -H أ+#Xcb7TBl2js/suc'&amp;{wVM؍&amp;e.#&gt;w!|F767!xxL"'ƶ͑Bձm!h8QZ`.YΖ0z#Jx2NPIn6 &gt;4CC/&lt;.2qlI0::::X@Ҕ2ci6ס%v(걙*E)nöi_ضC|Sc2}Ù3"\7Yq
+zW\	KnmL1Lf6P$%&amp;Hz	/rrA!EXoL9Z5r^/r%]v ؗ?ksI7#+l6$	°5S٩7v6P]z_Vq;{Zp!(r=XWavUTKH$"5|cGd"QU"\]#k@2D4M1'&amp;t9wkuM]=-YDEqvKdn=|{4y2&gt;^mmI0$&amp;΋bf=ggE=)va5"=f5g4Skq&amp;-VpG;OzuWbzȚ3@*, ^U.8/CT_K.	?b6 `:6n+5w$Iq\4F	둳}sB&gt;5SOmHgO$ځS=^!2ma=YSc'Cۉ%0&lt;V61ĀOMɰD
+bi&lt;
+_]{,Lļ4TB/K-?)+yr	]ok\bt"BuG$,Q+#ڤi=ccC)?9^0C	#8m({,Ziс5QRlVSA20ny$QIƱCHu
+Ƴ2Xy}K1E@'S\JpnOw}!|@'yU$RX[yd:C2!j;@YEl`6cr"݁|9cˋ	m}p̼Fb|@z$Dv4?;;DPqRFpάx3QnƍQ;V"NtM	CYKDi9 sбJ&lt;1\0"d&amp;m-٤gFИҢ^ʙ`6Ĺ=;-&amp;v9WR޹ȣT ;6@W8Xp1s21U8&gt;Gj]Ց0*uI/r1izXB遍,jMhhv!cw]t0ii\,%mQ2&amp;CM1Rµ($4þ3E*ޥ+yբ+b-pLH
+Kr0=޷
+CJ$l|HG1ُɜnk.k3Oc_0
+
+M{aQA5:P/T䠾bQy?yGQN2-(琼-Ta1Y,'Շ|"1#(PDD\Br`X#|}"Y_E0`I7&gt;2A:wa7VXs&gt;mbdGm9 f!",kH\O#648q=e	hy=!Z	Zx%B8fmocZ52]^]sZozAĂ#)3.sLk&gt;zSF&gt;?ASvE^1Tk(2y'S5q&lt;N`&amp;#2	PɇrJR g?2+vDxn4(-,&gt;b=
+_1^A1#z) ƕ͊ip6 5A&gt;Hl^D4_vduٛCھ I0.[IvKep(?";T~i=ݣtt92fDnAA$ⴷx-隊;ha\{_Իb9%6fYQRf-GX46ܝ&gt;MuCt.	ӱIꐲOF]6PV-e2QV=})7˟X0cB* [-׀nu*y%;{iZRav.Ϯ!QT7^6DOQI =+6E&amp;A&amp;}
+.߲}E 5ƭĴEeλ^mRbЊF&gt;o0N-d*42GL`]5&gt;g^0ξzkPj)	AQKŕ&lt;Sҹ/KNHUʤ?Nn6m4Gn2bS^w,+g3Ɛy/F;rI	 //yu~"ȥ\U/6 K$,~Ʀj@R1Հ&lt;"3R9@-_lݖSS؅$MVS;8weTKm.S&amp;CQضI]J翲EHY/ผc9\5Sdz+Q!-Ζvs~9xef*DnpG-"9"	KyhMRF.~52Bbd.hF^3X$ąׅ3&lt;ᘷ9rd["-AZrnXىba!u^i&gt;1CVd/sP#e F9B&lt;K㮧	Zi[3eL' 	*&gt;]Sze[ԞIǔ=6YoC$Q.='ϴn	v
+
+!\R(a]l\W!-"$:LXIE&gt;}֤?l'Bd{9P%"P#sڐH R"(w&gt;#=eI}M k/&gt;&amp;\=2q6.¨tn^ZeHS@aԢ}AvM#[kRsˉy*+Q5Ḉ^z+.w&lt;xy#Hn4ߤdDhyV*-z=V&amp;4'*&lt;o~tiW.] tiFX9:-}X!i1eA}ԈK
+0U'{Ά!a{`C}Bі\rTJQB9?I5Iv%n:xFYy  \H6稐-)R^1&lt;YXzF)5x)M*s4먋\-?9bS** &gt;&amp;6%@LrhۂUY/ھMLw'8&gt;'P"TS`A(N٧iR7MVuP9{9rKr˒*m	&amp;{cDr"Ec[+M抵sw=&amp;Ƌ9&lt;] o8qblڐMlR8&gt;= pmY_یN':pC|R٬	M#+YKT̤LO8Ő}^ G'8vP=seƭǒB\=}hg kJ~+$7"Jזɠ&amp;s}jƱg2裟Ml +'Jغ](,޴|Q`ߠd7X+}?	f+Ȗe}3.]w4뙍kv%1ld̷77V(uv"'^&gt;a_sy"_~1	vt֍t+oG&lt;zZ'UyIE{J,LCm@P|Fj[z%xTQ8ז?Oџ/7}25;C(8[YW
+Ԫ-
+p4ȏ}V(󚐇sC~Mˢo00
+{ ϐп\&amp;3u[&gt;'t:EdoҊaa5{Vo^IOPş}m[V1Ya \-4ܓܲE#wV5EEYSaIFlhiqC+7Q2pˮQԢ'ե_D/=A+m6&gt;?Zޭ7mӸNpJ~V:(?~ӑQt
+
+jEر!CγhH2"$kl^1n ^=7i=ThʝZw#xZP`Ǉa-&gt;FƂYMڞ&lt;X F,rGgl{zlk~ryQl^`x5B7RAO-T#{kP?	޴Zzr+üu[WYK0Szx	b`ͬ"Yi4%6Op3s,qmމm]ĽeEl6J:tRh.kİJZ!{0|\@U4I6'%k=`Ft~$.(@.z&gt;,.3%0lRTZ0#%G'1o; kؾCvcďQ^
+f+8XŤ}Us{mʉ6m-,Dl!8J|O$2z$Kr)=^8@a53ZX׽T9+æ@~#V48\Y|AaG&amp; eyڋM_
+	X= ,{.po؈iެg 
+8(f97XR[!"?"L7J|s8O1Bο5D?0Hg8pr&lt;QU-9%!3;E1)v̭cĪGأ|7&gt;cOcFەIdSIp&gt;'phjyYL˖g ,be#ؤvVa^5RQV'1߃Ch/..2Zcn*)E^eh6̔EcWIzO?]Dk^e7sy+`YʜPLOd'|o/WzYQOjM%mݐ\yUw~2k0%FiWz7YQH}ns.vWxvݐ:56\j'jaE}q*MU:E&lt;2az&lt;Ƭz&gt;?p0X
+Ǽ3|)z*E1tMhoEڂIⱲYٰv9s&gt;Dcwq&gt;Tv.}&gt;Wag5/ͮǹWLKU=FYPz;ԍn C/ij]P?""hH.`fH@s9n#	0[r6HQ"o$D0*5+]XF~hof3FEh =aۻX)YcXowJ&lt;{%F4ɛJxdC!0`#'7kHOJb`UTC4O8|-q|{d+c
+u8T,tݳ$A嚥qT{ z}N2d(c.qAk"*ƅz9tE)Ð{4=x[xu%D``K2sM&amp;/_uh]@z",݁z	dǚckUOaT [)Ԧb0Uc?:
+_1a~(t2B-W7q4hMPlZ}oSLyPu9TR8Fs2d(ë&amp;&lt;*1b~+sL=$*C,,$2HSt5v{[k.zoN' p*m)VNso9]&amp;
+%xwWvy'F3&amp;[l1yg|5!/pJCʊbR\%޹[^CaBgm{MbUhaY1Nre=Hi\Ex
+%gXv &gt;h
+8(V'wM+/Y0݊ÛkC9&lt;Z@;hovÍpnAވ=v
+|&lt;,'BmG{4w 	
+8&gt;[BElH+O7-ٔHB2@_ft&lt;mPmd8%.@}or!#gPoB-bs{%ILW&lt;B9S3P2$`WA~nݰ&lt;)]{f@iÖ\ԟ#7 m(q^ &amp;ۋ4zq7-s#-eh,q\-Ā
+32j9J
+ BU,0(siLuD@&lt;FwNt	7n9YT\*CeV=TТtSV"Y 눧!Af@z߽(Oc:.8'7!M
+~TIFKtpc.zh:pyM5d&amp;m;wf;k6gʛ=+rgDia+vﱈG		A~-ԛY&amp;KQ+{n@"lWl폱@sDӨ-o ]Jy%,Z\Cks&lt;ee@h_2+VK}IcI|	tgؕkQ6U-b{xendstream
+endobj
+6 0 obj
+11674
+endobj
+17 0 obj
+&lt;&lt;/Length 18 0 R/Filter /FlateDecode&gt;&gt;
+stream
+xXKkHfv3cCvbŁDUߏ^B.	s@;*J!jJzuLȂ7A|y~nZuqmsL5˟ovG-놳&lt;w},
+,cMv7Z]mePqä2SGU[\Wi+1#W:ˇX'I	&amp;ݻ eXחaE,itSƧJ0q ]Wub?[W3b$%h4e['*iUkCjłsZ6u3̓勪qI7E[ںWIgˋ$=bR(c$dNң.O3B"r BCqL:&lt;F Ab3"{]01'	L]A幞60gH!QBz@GY")#K|	ϣMq!Pbi2D"~@vuMQ~@j!+b1=/C3! :}I4йo(Vi Fjc y@AHjxŖϓ&gt;ϱ=~NZAFJG@fȿ,nEvK4`_ g#nD!5jBnir2r&gt;gi̞Ӛ&gt;4OSN$ѬDQ˼i2tw(Œ1t#3&amp;a@IU,s.˷3ӝ:Y\ys9
+M{G!=q2#^݃:c@hv]v81i
+M*tǱUwN'/P}?	tarw2 ZAgIz:J+q̔B:KT)&amp;qc ғIN[A38ਲ਼$=AWu8Exq2cw*0	#C%0A(#pvk o.%`Ijs&lt;""mZ,=l=*097m.CE'&lt;
+	%4b-3++8_4&amp;]Q+g . jNjd3̚&amp;T߬+Zh,*6_endstream
+endobj
+18 0 obj
+1120
+endobj
+4 0 obj
+&lt;&lt;/Type/Page/MediaBox [0 0 612 792]
+/Rotate 0/Parent 3 0 R
+/Resources&lt;&lt;/ProcSet[/PDF /Text]
+/ExtGState 14 0 R
+/Font 15 0 R
+&gt;&gt;
+/Contents 5 0 R
+&gt;&gt;
+endobj
+16 0 obj
+&lt;&lt;/Type/Page/MediaBox [0 0 612 792]
+/Rotate 0/Parent 3 0 R
+/Resources&lt;&lt;/ProcSet[/PDF /Text]
+/ExtGState 19 0 R
+/Font 20 0 R
+&gt;&gt;
+/Contents 17 0 R
+&gt;&gt;
+endobj
+3 0 obj
+&lt;&lt; /Type /Pages /Kids [
+4 0 R
+16 0 R
+] /Count 2
+/Rotate 0&gt;&gt;
+endobj
+1 0 obj
+&lt;&lt;/Type /Catalog /Pages 3 0 R
+/Metadata 26 0 R
+&gt;&gt;
+endobj
+7 0 obj
+&lt;&lt;/Type/ExtGState
+/OPM 1&gt;&gt;endobj
+14 0 obj
+&lt;&lt;/R7
+7 0 R&gt;&gt;
+endobj
+15 0 obj
+&lt;&lt;/R8
+8 0 R/R10
+10 0 R/R12
+12 0 R&gt;&gt;
+endobj
+19 0 obj
+&lt;&lt;/R7
+7 0 R&gt;&gt;
+endobj
+20 0 obj
+&lt;&lt;/R8
+8 0 R/R12
+12 0 R&gt;&gt;
+endobj
+24 0 obj
+&lt;&lt;/Filter/FlateDecode/Length 580&gt;&gt;stream
+x]1n@^3$mi\$\V
+S,}H񃌵%ve;߇eoq[pmg&gt;o׷?]~_x_,Y/~]~[׾{*=Nm׷?%8&gt;Z/LUF˔X֖)rl2,)s˔e4|lri2Vwǖ)s-SZL+JA	8?V	8gp&amp;VU/VY;KLip&amp;td	 h^L3]{9gVܳ	`8p	:p.	\X	&amp;8O 	8rةXVNÁsC/@UҪuNlpXb|oVq)xGN*ayZ7ZE ?`8W%p@N#+ .0B:rq
+8r1Wa
+Wj9I@AI`1[SNT0!Yw%k3[t)2:o߽v\Ԁ 1
+endstream
+endobj
+8 0 obj
+&lt;&lt;/BaseFont/HWNDJR+ArialNarrow/FontDescriptor 9 0 R/ToUnicode 24 0 R/Type/Font
+/FirstChar 1/LastChar 73/Widths[ 228 547 456 456 456 456 456 228 456 501 456 182 410 592 182
+456 410 547 228 592 273 456 410 456 547 683 273 273 273 273 456
+456 410 456 228 410 456 592 547 410 228 592 228 182 273 410 182
+501 291 547 592 228 456 592 456 456 638 228 228 638 456 456 774
+547 592 547 547 683 547 638 456 456 157]
+/Subtype/TrueType&gt;&gt;
+endobj
+25 0 obj
+&lt;&lt;/Filter/FlateDecode/Length 390&gt;&gt;stream
+x]An0}N038HaѪj{8((EO/iכuΟ^ԯ6?\sSRc6n6n^J͇4&lt;tt)Ձ(!Ue=|yx. I׭5$IjlqLBmB@%5-&gt;y(.y(dsP`Ԝ&lt;}P*C4$VV&lt;Oc
+b"jebyY^zTy"V+7{FU+7&amp;YlhoV6oŲZټV6oZټ-[6DbވV1oH*myUy#DV1oĵZż-l=cy}gZ-u/]^/
+endstream
+endobj
+10 0 obj
+&lt;&lt;/BaseFont/VYQQAT+ArialNarrow,Bold/FontDescriptor 11 0 R/ToUnicode 25 0 R/Type/Font
+/FirstChar 1/LastChar 39/Widths[ 592 547 501 638 592 228 592 774 592 501 592 228 638 501 592
+547 228 547 592 592 547 683 228 547 592 501 228 501 456 456 319
+273 228 456 456 456 501 501 501]
+/Subtype/TrueType&gt;&gt;
+endobj
+12 0 obj
+&lt;&lt;/BaseFont/QEGMJO+Helvetica/FontDescriptor 13 0 R/Type/Font
+/FirstChar 32/LastChar 32/Widths[
+278]
+/Encoding/WinAnsiEncoding/Subtype/Type1&gt;&gt;
+endobj
+9 0 obj
+&lt;&lt;/Type/FontDescriptor/FontName/HWNDJR+ArialNarrow/FontBBox[-38 -210 766 728]/Flags 6
+/Ascent 728
+/CapHeight 728
+/Descent -210
+/ItalicAngle 0
+/StemV 82
+/MissingWidth 228
+/XHeight 530
+/FontFile2 21 0 R&gt;&gt;
+endobj
+%BeginResource: file (PDF FontFile obj_21)
+21 0 obj
+&lt;&lt;/Filter/FlateDecode
+/Length1 25408/Length 17156&gt;&gt;stream
+x|y|EU=GܓI2L @
+FJnGH DQ%P uAkwT\Wwq}]L~OLfR]]]5UO=zFQbPIW"̼.V;nl2'V7?"P&gt;6gnX{&amp;HMuլt"4SjELܶhi}؄y3bpϜ۪3#}\^u[up\7oXyWnAuCBqQ䅔F^6yW4v~EiN.w~ýl? ?lEnz?7t'&amp;G#4t'jFQ+j07'q-Z=89~"ꡥ@$|)&amp;rNs.JDVtȋP%Z`+yepe+:dg;JxLt}ϸmDP1j0YϠ "y{Ѝ~2zr p-s܌,pA߉7G[N~ÎDi?t-@w6mhjC)t}%6q3'P`m@ O1Ʃ8Osy|lf&gt;c=l$}?"ceNv4(rCPFb:B@ɽT},Ȟ :E/7Q';aO4 ߁x-h?U|
+
+FOFe|f*ƎcwN&gt;}s5R؆|(5;M1&lt;hR}5hh=}~z$(we§"X&lt;Oƥ[k6_&amp;d'қDh2L%IYH"J%0L_FgçYWYujBn"W.2o5~ ?'+ZѦk܂"5
+goT4ajmx^t2:\a6ρ
+DFTqHe69w8 _м!ݷO^={dfSSD_v9vZ-f"Ks,C0],2mlFpĈ&gt;UW]RmaYږ:/-XK%V(O@Q0v0hS'@[q&gt;8g3
+))@0ІÁ;j~yXpXܧ7'+pY[qn.'h&gt;`H3mTmdvI/V2ЗRѧw638ojfM01m6xLm}|}*2
+ΪVTUghYmÃm×ݎ\&amp;khr4aȆ
+4۰ƫE -_hkP~um
+=VTM=&lt;z,/@1{fl"z%|KM
+YK&amp;+a}X?a~S4(~ry0*L@'F^[ӧ&gt;UQz?1&gt;3ΌzEjL{	,HzEk~P:\#;JU
+)en󶬬^(`jg7}z6:XFPI9|bh6&lt;%v̀B[ÄX9f#=;ig)iz8"&amp;ft[Ufhv7ձz&gt;K__RQ~/#
+b닃U35~]Cj&lt;צWQm1jه3&gt;R;#&gt;~p*԰qѓ'L-;~eH}1
+wF!$m:Q_w^![w(vEKx=`Y`ue^|m;KGI ENf{ 7lG{!tҷ:!	ЛHT	iQ3&gt;]$9s.J.]jtK
+]:}EK9PpKK$o5Aj8O!3z&amp;	P@HAZi#H Gr@
+CjRӐ&gt;t]88$eWA^H Htj)J}\W"(93Dn.GzRQ PC:H,)V1Rt?scgǳc,[ f{YbTh藐J)GbVM:.&gt;.HdBP *y"	s·B \?л$%+g&amp;cN1oKh}&amp;^ڌv+
+t9^ڈaw==yUoWy9Q=S$ȃJF'tltTN"(pVBNX|s_ƾ7/ ?#nT\`z; * _Y0'1B6rf7Z0($|_NA:9oj'ߩNƮWo\ٻg7k&lt;kg=p̵#ԎSav&lt;v=nh?X"\ui.v,Lp #xUvs7?Õ!B]GƸ9TF bsauc]_71m&amp;uVş/VLo*3\Π]+bۖ\Z]YʢC\L1[̕j&amp;5҄MV
+MBS4Eh*T1 &amp;b]ChM,"/"AqMFO	n;&gt;hqRqpm4=&amp;OېgnJn.߇`{iyB#5h޹
+?O]R7N
+pm$D/5}'4&lt;ImTLRE[zҙT1mޤ#'cQ|fG?v$ݎ
+KqQCaX|͡]2څvn9E1ژnB6M7mwBF+gY3hF2TVm*h}?A}e?лRܨ&gt;'2Aexؕ&amp;&amp;̼&amp;&lt;h`dO*_R\|IKUFi}&amp;o6'?iv[_,kJAf8XT)ܶO[Ì@`߆w3#&lt;cfͫVmMoVZ==XM.תWO/
+VVqm&lt;k]+7l}֌mRVϠF&gt;k&gt;x.VROD7UE	R*nru7t]g( 3aDFZ"B}xgu)xOJrhhQWoYY;uxE -ݮմSQM@78&lt;`_H.+ b銀Y8Fb$ܓ'j)Zz&gt;{Dȡ_@cspQm
+Z[e,J;E I0),prDxq	4*&lt;
+o-PLCC-/&amp;TOJq/u2qq=3``ѿƎ s3зFOŻH]v`,ޡw졑út[ƞLP U&gt;@&amp;4FfBvTgxQbE&lt;	=f#"\!P"Cf05,G sy;U;^{Aߏ	ρz/F}$i?~G򒞄]PKi~B
+pD@M \d-?\w &lt;3fFJDut}
+^Oo t$LGiE5TdS/´v$ #r7[٧/9yrIcXOtāLn	A~C :Ԅ4Y:809쀛3#+=e)*oǞ'KОA	PYMHY2#v&lt;uߝ,8JFnl߬~9N%'?;Yٺ{Zp
+l_-J0F#wl56cXڻazo5^9Y8s8Q,&amp;88xW5`8\-L%vՕfSao̥o-n^Y&lt;߹htN ;;"a^F	Cq5]%a$Ĵq\:iH(+18HE`,eהf@`\2oSs#fP0lPuc/&gt;t x
+yyY\DZ7++lu`bW;*݅F%YZ7Z}m&gt;&amp;5_;3
+]4f"H~AGfsa;$YXr(@pz5 P3%6&lt;p = {sf;SwܳU=t+N3_zhgqv~8{Yd0aIEQb@5Wݎ-+8faEICSI璾MLbIHRXکsi?2ruG^݃7`؎&gt;(bTˎ`-FS-6Z)p0%rL5R5N&amp;?+xe8^dN쎟J "/$ e05pSߗ7}K͉'6&lt;q#w{&gt;aQroݜw	|O1m{oRyM;"#3zTd7d6&lt;ǰ esHr22	%,qbH;&gt;J~6c1~`TUh#jA{dEb%S8T4=4"XH|[&lt;ڠj\q	-e rA0I\"KxbSt-&lt;jW1͑[k	sO$K獉`{1\Eގo}bf+p:}C fW&gt;-M=#{*=眇=G-$_=}/91rҖ(M&gt;8Ir	-	pr5l5BPA!8
+cS)̠[a[5vkaS7,&amp;єo]ܹw~ֽGs&lt;cZ󓏢'?.jM1tI&amp;:kz&gt;f'tS0QV۽=:(cѝ
+/_a7K.Q=W?Z~Pn#!Cp`OJ3{xQH2xTjHFiT:~EW$':4rrLYɔ\]B1$ddRq*D@';QW7-=z0}oS}^Yw$reod'Y~|&lt;`ӸhyPyPs*PӍ)EAdoE&gt;&lt;fN^m))$ZzzVbϳq4)sa3NI[Ml"@nUejSJc*ӃArCU3i@n!rj=դ;$*LosjYp)8K|gEI2,&amp;CU.j.݅L
+WWsQq~`҄KJ{zͮ&lt;oxY8q;+g͹/ZmdkLsYd聇puR,~_q  &gt;ȬEȺ9g-Wt F(C;ǨIi&amp;˻3t{z)d[b5PӫKSK࿆biIΔf3d$^ai`J1`(+ P5hZ@S'9x[^̜OR乴}MOݿ%f#/omz9j%Lf0=20w0/p,/S
+a*(0:ܳ8yn;Iuϱ23KǼLw~ʊЀe_=kwYW7a80S&lt;'Qؙ`'{zUɄFnaiU@p%9I=(*g9J&amp;N4h2	"$&lt;i$MP0`b e,[&amp;`؎' "@&amp;HY!170501qC,07'N'!SnbSpzIa)LF&amp;/CE{-+ܽ?㗣d*~o~@hDՇd˴i=z&lt;I23/T"QJۃH¦S鸉7&gt;gbR\t݁Pw!ԓ:0.Pn+Q4D]Z/5,133NEx6ݛaHI&gt;=.W2	{%[+q\ɸJ$z8JjN^Ҕ̕XJ,?.hZ7@pJܫuSįk]^R[ۡ臘uðΚ]8p߸/Vxyff9t|m_Zm	KNZ8KI|^M(HAFXFi}喛]ۖ,y:yIzXzkd%_{VDk&amp;wpv]J^hol7V|cI;fWi%bȈGyA7^)|#]p*dWU)٪p#fͳJ I ցKݱe&amp;-/g?՞iB]	\wx_VG@W'Mȋv&gt;'z,
+|+Ha(4&lt;[OD^36f:bMK04:Ȼy/2n9C6'CV^l
+9Oz&lt;NSW%ۧ&lt;h8YyQ_huOJ]a
+t3W!DRRDΐ'd]	+Fit'b.cTD_IGl2FL.T~1ZyC;SiSJEϸG;J%z"F
+o9̜"r.%cRE\k51g3YEd@WC̦lJEIε=o;&lt;H'S 0(}"!b{I^K@T}2IM	3JMe*.Aǎ^c-od1`b7ݔRVb	$	*1!NJPCهji`FQ@Z\[{H`?17ʛߘPR|`aqzzƋܹxUOgހ5jj`\ ^ S?DQ9 "Qr`usW|/Y|%4v4d؁@
+qu&lt;E\LDZaBWY/pu\ĵrǹܧNR9PXPl!TAYϱZ#Եr8Hk՛nP}ΞP]EO2IS3m ɒ(s(;y9d%a /( DhJw8	*lV![C¢_@uD0SM@*a0;L͝s9).!D5_4Ćs%0pvg)cT  $E^|(tX
+=X[0ea%l;@G7kǨޥXn5i*T~ S Oߨ_IJmQZ,ٳ³&amp;Ea),3~ei915hc.$Ù|Rd(oN'
+Az0=Le"B`Vj,KRǘdӔ`.*Z2OۨhǴSNW9;󛘝&amp;baὂC_Y
+
+9JY)`1LY2Vl2"1[+JaE+rW6LݪFrYk)k7MVtpMqSS{/HUyZwH`,dQH
+͟BLaJ(0[?l&gt;1$w&gt;s1_*4c̟DRd3#=,(/S) C`&gt;@f$A$,f+"_Cז@:g`O[fWA~i~I)،3*=pX;lobr-W$g*`ᒵjG	Ht ȥ]@R9:]fV!OVTqB"pT۟9UO	df6m@f_Q?`~ۦ'?E|oq}+u///F=Wp&gt;=Eqs6p5Lk6#k RZ.T#n'ɺLDi#wS\wAdAghYlse?@; &gt;(o?E7Vyg}bƻs9ξ4 C'*{bp#ͮܝn4)CE	.ĥ%/2LrAbH/{C|JBjK)
+ipNDateR6)]KO0gŔ*WR4z[r,Uh9 2xdAhͰ,ŋpu6dtcdB\X'm^7[_oN3j#ơn4z@qSW6!?G?ȼn6p#=PyFz׬JXI8&lt;
+GeZLtYwYAc;soYxdO\1ǟ%qMcn.OO/s Ɍ'3p	Ojܹ[G1vA/bĹezPeEI;R=щV&gt;nbD~̊,fr-;odLHGXHB[4_Tx[S`fp
+dpzJ;fa6+/*I3iVBGYWZ#
++8Kܗ=zBuV)ه|;p^GC6uӯgI{3I8VLtcg֫qNS'.'׫^t^_P0[t%rшB![:od+V
+5Z/"|d̾X&gt;4P-6ֵt^x*љ&lt;3M%_~;m5phsK#qy7V0Gf7l\_ׯ!W&lt;5}?H9&lt;NjXTeʃ'@$Ŕ| y{aZCHЧ/y|\RK47ׂE1G8=`}rGv*ZTAaS~ɤ C0D	A$l7зdSXw|xAb%*[#tl(o&lt; I`ll%CmQlZ"Bͧ^k*3# 1ͭ&gt;MGW?;zy߇oŉy[CǱW8gKA%ɴt52kh$3#?&lt;`&gt;wNJ9-UCdsxnu"̖|7Crq.pFv'tK ̝ʕpGHҘlB$A655N.0#SsDK%ǣ R|t%lOp#0}O7/ՖFKuŲź%~PՀg65\=eR6,4yL{\g3iOY.IpyKI)&lt;$&gt;(5;M;MM.x4wZaUNU&amp;rީ\/hيDWDj.|Npppev,4uDٮ,1.n@'ͥi
+lADnQVZ*iڏ	4]֩azjx/Ĭx\$y	w;FkԋT`v`T&lt;PN;懌ծYEo͉9LWU_TRjP_  ]nm	v}IAN{5zh[4Culڊ̟#	yg_CeLCaɴ8(K:gSc\ 1@|`!4(&amp;U5k6]*J8L&amp;FJ$9@E@mv 1T%o71vdUrJL+J5	&gt;GλƏvQ}hQO(','N
+MRQOHcaIC.:u"SO.D.U5IރJfp.kLY[,S6ǂā*er#1T 
+
+9 +&amp;l
+G0 ˑ؞q#]+1g:ۍ"#CƉ5|&amp;ﵯ# -{&amp;H3_1P*zm{2X39,3%39q/v(ؾ&amp;HL5(%d51z$8/7x,ߑ(psZGȽ%eY ?9'hb|_Cֵ NӅc[Q?q09D6|ppn
+i(볨k.	&gt;KVhˀkP:܀*2HIr3^#0&lt;9usqsf{ҶngO{v}BkhTƯ;('^9[p?HT{7ٸfi(}g
+`t!1]dEPb `UfQ4x($AB~({		6cX7!?]ơ&lt;8!aw$}YJw'cr945\b-jvZ~uZVb"uitTF&amp;juKF=-c{ۇ|ڙ7eF_Ӿwѳw=9;qFc/zN-.2maeRE˃f`AY@sey!Z	" 1hwjMF@H	? 4&amp;P	14\&amp;ɻK]D46愰}hFYx$afm:y	^Jر;ͽ?~c:(eNzKZ&gt;N֧+EN+)0t0օ w!26g&lt;x*-%3SIJVe8yg)J}W$	kr	&amp;O-6[0ne]UKuy;t&gt;yʑ2k+zn&lt;r{;xEs1Ν|#B'vCV%VL=0D'r`GjePhr9xB2dvo]f(1fvt#c747@_k)(NP&gt;T2uW˺6MHS&amp;&lt;95#pi-OE/~oy~y	#%z&gt;}΁C8p.j ug=%:Oo4yZ=hԢ&lt;niĘ43veͅd_\LQI|[|34fބR0(w\mزە@^8iwtIz:`oϛy~+n="U͸l?o }r{//K&amp;A4Ow.J&amp;wZ2ie&amp;?iĢlY5s!8&lt;)6yT5̙R7-^zJ=~Jߪتfp hXX*m .J;5K29ђ!Hx[FМR$	gִR$R[uiz%L=z:]=\jZYɐjtjǆ&lt;L6=18^IUQiY:r;jڒCOZ~֬LPP:)4mȋEl|c4\1|_q?.ӝb8Hd|:oe#k#/ ~؈]Mr`\ňCƒ,4~^&gt;O)M5VlrkTL\n"ZPmv6{ǚgL	7n}_G*cn?ylBQ)PHmAb݁XTbA_p\[¶LXKa!2D#Jsٿ:x~g[tP~c{@wuqQMigL&amp;ݛC9r*3Me,غ?td@xgh t9?7;yޭ_{˷YF=NT\hD-lOFHқe~fSf(v\].dpe#O^rwE~gX^*[9:41h*4E
+]XqV,ơ
+w5Ǣj'{E"eћ)Ej~1fFr8cJ6xaV46Vx^lCcƄ4wEofAџ6SL3,@y.-&amp;5]O1%X:	#d[vxU|`o"CV5dS&amp;h7!|GY]ٍHRQ@V(
+il8iU|]91fy=]h?*(&lt;1DW8^?q*߀Ɖ+SF\ilIS+oy)IYP9`-d=scv*"=%fĵqfqɦWM]1yʏPǏZ;Xj9;7d-\=kr6L-^22mS!d3x9ܻxuL@:wQn_ŃEg#X$6- dLs2Xݪh+TwEL ɘ8@gK;K #G"2߾ؿ[WyǞWџEb{;54k	C)&lt;!?N3Pޗ.f+wdQmXk92=B9ŀHF"*L$/dnӜJLb&amp; y%߿BI,MBk-
+a:buMo]munce&lt;U
+Ȳ13+r2f?F=[G~a|~p폀nCnntkzUx|2xtfG [ PXmf,QȪNN@ˎpǗhsJOp(&amp;t8qxcJ弊8]q8_  [\W&lt;mʾk"fUp͍Z"^?&amp;=0S{ճbMzRHK%
+k(^&lt;Z@cKuiO5tkǸd4
+㖴+ޔOc  cDLVXV[Y3qzu`ҁ&lt; {f&lt;V7r̛(r7KF	$Ee}#}Q7?i9$Ӿtݩdי,"kzfüݳ%uysm~+L#x&gt;$;L&amp;HazCby|\~S&gt;#_L^'#2_B\ՎylEژbLŽjFB@MǎwAY]sMx*7ǷGўtŎ`#\F
+5¾h8WG2A&gt;yQ8\ǿE۫YO9&lt;7ѷuU,zsgR+Z2q˔R:p@7鶀7ǫ{Kup)Z"8^MzY2]b6E4	VUM6ʊ`l!$=Vp̠R0pe
+8$Ϧ &lt;踾s7o6xkQQn07z})4:Zf\gzѼ%VN40F j+X3)ʊT.3Ci(6{KVvHFKk-2+0 tv]_6~)yݴsy4"7l$4FN`2ޓf^ShM4|$2&amp;ff
+LMaSIhHKHK Y]F;WFU$V/%\bBxn%~RG	!GDа،vQ4A1Iw[S&amp;OX[⿈8Q `&gt;Zrew؃mb3"̽edA7&lt;M÷G#v~3wZ5QREͫzgcSN0	:˝?V&amp;IMlHVu;L[@:T^wH3}&amp; b	YJBԆj$	fIQ̠`y҃,˂3Y,t,I@5[$90%&amp;RˁiD%7AU\ &gt;Q1,4}1p.ՆXP$4?rs?l-/[=m, WȘ 7Lq ?n[wֻzvۆ6ϒ#[wr˧`L8Eomٶx[5W+(j-m&amp;E"YY
+`ժXլ"/szrc"ɪ4
+ Q,«FTHG
+0zzϛdb!MM6LHL2#FەPo9ZKk4H'"БHG4/YNߌ؄AS6ߛIOjn~/Ky&amp;5[ɍVp־7*۸-V%'֨~rʅ6^)4e~̸SMf&amp;Y5˪`Vy$Y94U7T]@FvYm BLӬ-CRjJe@#~Nf2E~hUj/d%ПVPrb|Kɣ=	иwl0TFDPw-Yt۱(NL^5 Qwу-Ro]+:i5qGd»＃aA`,M}DDq!#D.au)Y*C?&amp;%_$-D4,&lt;95$D_dyI}}x3Eܽ&amp;Ά\wА1y(jU4(@4y#L~xksb&gt;H~`aPn3dU&gt;Bގyfn~D/v/d&gt;'hʴ8	7f
+}]J4Y:2^M|&gt;|f%jydq.1+Hc/M HBF&gt;N-."aoDu9!bkDO=|&gt;`!xpXz̾GҜ}],9~R6BhFhZj :W15ȳtAhN0h:10̱l_!CRgHg|Te^~~ǸkIx
++c_4oRX6Ͱ_끵Žwr
+R63ŭDZF݋-0UVĠ7?tfFWݹϒϓ+wH3q߃d)
+\WKgBU#l1*ޑN~V]015?nQ-O[Gim6.8;8K_]tX==JP}徿&amp;V$L.,i~ը/w: 	x幅F8&amp;t=fJiʦfOH+Qh*^1/4VPOǐޮnO[r/oh^Vr$c~HAFvv#YDEhFF1h
+DQ24lT&amp;4L
+:^oGh|4i(%HE7C'8=@FP2ꅼȇ&lt;l(ٍІP/gqAm-1jnC
+KB5?@Jd4_	'٨]	&gt; @w1Oa^=~-?nx~-N6d_F%V9
+Ay5i{-喠p}ԗµ C^CnC
+Vfϣȅ4/sy&lt;vzx&gt;h2R\N)t/4&amp;ҘNoٳ=ZibByPtC&gt;Sl%3 
+endstream
+endobj
+11 0 obj
+&lt;&lt;/Type/FontDescriptor/FontName/VYQQAT+ArialNarrow,Bold/FontBBox[0 -210 772 728]/Flags 6
+/Ascent 728
+/CapHeight 728
+/Descent -210
+/ItalicAngle 0
+/StemV 112
+/MissingWidth 228
+/XHeight 530
+/FontFile2 22 0 R&gt;&gt;
+endobj
+%BeginResource: file (PDF FontFile obj_22)
+22 0 obj
+&lt;&lt;/Filter/FlateDecode
+/Length1 17352/Length 11610&gt;&gt;stream
+x{	xT{ι3l$3		  ȅ,&amp;@ ! @6qCQ֥5	DKmjE+
+mhm$T;	b_yܜ{޳]~	 @30(56or k83+N]W5.vv; -fUQg /_Z7y mX9~9VX*y XN[~Iǰϱ֯kocا+_t+W_-yzW-m\ Y#! "gSY^|*Nz"rAsm O&gt;t2̟¿X=_Y `#PB!n(@+c}ȅ#ϑV*&amp;w`ƺ]	S.x'އ?
+p~?A^a&amp;g iR|z8Yif&gt;,l68aC*PYy3Ă&amp;D(HyGxgsFt דgYspvЉs|JFL24H pe*W/!CȃӯylP%⻳`6\W7x C7\K"X&lt;	E]2p:ca-x}L_Õg}ǣ8H\$9A&amp;R1YF~@&amp;ϒT\ɮe[+	yBH5|6|.26r8u2qs̈́PW)"w2Z6݆sC܍|w5x¹P쾀-z9%98|r%K )S'͠c8ZNEt1]FaX*pȂBP-,	!E\vq8[|\4J&gt;wUbbd*~La*jΣGpz \OJYdMzȝdMuf%v+{ILgBVP+Gcȫts6H^Nq3sPܑaB;fq3cP4%&lt;J֏P{c767@n$JzTjMneh;vdhQ
+Lʛ8a\1YG1|XF4IIu8vbL"K(7	3F+/XU]7hyK#UDG)͇Q#~o7E~oU;5PF//H[*Y8XL¥Q#IìP )B-)tbYfC"&gt;Z\$T1(52D
+?-d4H&amp;$dco_rG3KKWX}Ñ/
+Mp&amp;~:v惥EE5|4gaKɓXKq|[ZyC{gU_tȲ&gt;/_jc)I:肗yMp7f%`z_{L3rf{[*PAhA^T~eȃvGrif6#gzՄ_".L!:t"--'"~jrlO!-
+߭?rQ}0%E.ĭřM1ʹFP*IYra!&lt;:Z¢vг2kB4[[b(·ؐ~fw/"Ӽ4ڎS=(C[*[v$[)AUli){KZ-E~r88H~GrLD)fI&amp;Isesej'lZHKKP¿;Z졙8jDB$&amp;.{&amp;!	:M+7#/x} }L&gt;TghЛP#S#p·ӘRwG+NN/S3&amp;{~/	٘15cԃIr|{{1`bXnal331aڋIB-ݘ0)t|o:k:=W4[A7cjôwEı=Nc3*{h^$|G*l-l)?SHw	]}&lt;6L!L{S/F K{AZ޻OC{K{10ac[!b[!;5tڨŔM^o\/4v:h&amp;u
+kH^Z=*yfym6!Ͷuzlm}6Y"DC89EΑ#f"ģqxN؂30lag/Df׼Z&amp;d%8WiZvZ=|\&gt;%#wP~@ۚݪV[[[ZM־Vni=EZkݯpD$L(˄ħEܳCmIO
+Um)6UV&amp;=B='z&lt;x{&lt;- -btE\-p!bJ:&amp;===7tĻMӡGS33A|&lt;ѾTC%ֹWvw]LYоٍԵo[`8߬@j2|,%j&lt;{ _J7zlj"/beTg+0D:߾N{}W5|yi[.s}9l&lt;|8ѽCy44,?B*`WwBazІMV{e8^6:&gt;݌d/ou߈m:I4w#V]ht-Ӱy~Xc&lt;A2NA@v!5kUԌMUHB{Ld((W`\&amp;I$:GN_v_TuovCUx[ך=C=~ct8۱aņN"pJDA&gt;VnXnV#)WIQ(JV\S+VŬEA
+GQ0KL	Ű2Z6g)u/Es46$*&amp;fY+D[8.Bo3?#[!x~#e뻐) glO,Sz*&amp;4g"5es;&lt;_\I&gt;N#Fb=!:-=a2a8A&amp;e	9r?JW#]= :yA'tXV\tp2&amp;c6aм1J|`]A5vRiLrHeFO6 ͚iFOH1ߒ|v3$-IU&gt;9HBD҈_I";KF}~B=Y}Bo({9!cN#k# ⥘k#rzzo 4H.Z?뗆/-
+y.=yAX\Y}p}__Ts(дX&amp;"&gt;Vi7Xc1)nVQ}Pi5CT3|5)*]ߜ% y4f,xӨ&amp;&amp;+7_K"O4ٱځ&lt;&gt;w`&amp;*Rx'ъ,X`cZz,.ۥ)3]WsR,5y"Б  C~sAQ  GH66$v13FgJyWg^iECA&gt;mLvsF-Ȱ;"|^H9IjHhPeQyWx[TI!,Ko4$LY+g˺\!eQDl؛!$;rdÂ@LNK)dƬUOWWlCVq
+A%(T@Ap'қxq?Kg9nxyyf?2NJNߖ?&gt;WWw%6\JB	QMLTY%d2*EI)ICH2!3$j]у@alЇSndZ6j*XW8#=ޛh¿x? pre#yљn&lt;mt&lt;mcd@ &gt;Ëb.[{\&gt;$v}Bm@4 o`&gt;M4պv璘.()1NS;,+8Skw(#a(mnԈAxϲlG:Xnn|US?л)/+ÄəGq]Bb]KI#g)$whgn ]eN)ɛ}̛t5+q+gEҩ\u?]E䬰L|~=miΠRiUHs\FӥtsǺl\k̬J:Ȏ4&lt;ҮgGBNFsJB*7)rT9R)(d;$?rB/D |I$S3	sƹddG䰻sƎg&gt;#Gmly[wФobr[-^*ᦏ?};p&gt;/u&lt;fyJPa0%O`.6kfV,`56gI9٤,U: 	XD29\afhGY0sH~qQ2K!X&gt;#ݿyn;rOx4(n=|͟&gt;&gt;Gxܑ5?5oq\-8QQM
+\[YPl
+&gt;]jh%~\a!2n*1ltA|Y3|](*`GH٦t~te/pޛPUFyKY5	b׈Azl=NQf(h;3ej^TM;8[&gt;@lE|V쿋sss7^xD[l&amp;'$+,ݜ䚙NLWq?bd/Ԣ88;P|kl	M7޹qe4鬑n&amp;:NwBjv*\n0obv1q5ܑ܆/pfq&gt;s}b &gt;ט4gZXa@abq\c&amp;ҧVpߞG	9t}ImK^^]4$ޚдo_hpR׀\rC$
+3iUM&amp;D*+,1g:V,|T&gt;$wP&gt;[qWiw7qػ&gt;Nҩ_Лo{oKq.sqrqe&lt;m6 4xcN8xԃE^}^Ǹip&gt;Yҥ&lt;iT,1d͌Ζv#tT=j$IVMbѳ!%IT~=]\,1MM&amp;DAfSp\xq%v\^d.
+pm"}p }1JR\%lݰp&gt;+7c=_!}	uJ|Dvx|B/#_	?sLCqQ?F0R7!E"v-&lt;6q؛⏿.pMڙGhlPkc{=Z;lM+:+Wʵf֪4YV91$hoѓ[I$P (EjT[fԢo+j/ir	sjazi5(V7:avX=d:F%+:t4]PT	.ÌV4 U}]5ⱒVq+"5DȚY9."x$&gt;'A/d9PĈ+.Mv#rbH0dhyBAG7?ρG30.2'rkӴ
+eanP1,7ҋx,}Upכy`|JUXDQ\,I,%(|$f9w"^EF٥(4tCe"u)sJ?.P=v9;p}89* )և8n+/G7*a/~Sc&amp;wXqܥוP2S,UK,l&lt;$,[1\M8wNp&lt;_#Ѕ=CHh,{dmk#r|ZUT~nm3Vܟ{Uܐr؝sgeHqqW~cC_#+~p/p]-"9kێqk"D.|#r;mxX6nC$ex+:G(D\`,1ƪ.!	r|nؙfð:$ȱqQ[I&amp;I譿/zǺ'lV?E_='O/g.IőÀb{tNFT[Tvw%|hN%
+nzfA$Duf&gt;,VPGbbn_TؤwZ۬3E(u0a ".FS\4.:=#=l$cO^+;|*ʱNOŮI&lt;#)x׿]\]Z2׎Q L|(XQn+vV]ayb\!Ӂx|&gt;΄iRUMEieLNh;Cڳ9W7?&gt;RZmFUHl	nB/Py1RNtRA~fFnCNGgaUهgDcd#kսo}X+K#ZʥjxA´`Zs48qKkͶNVXFkm=m5
+
+&amp;66z'\&gt;3`Ū@=+BS fu Mmb]Pɽ&gt;ngj{mo}*ݾbѢϾؼO
+Ϯ;dTnu^ۖfO&gt;|Lێ =)`&gt;J"2*UT]eelJ8Φʹ^R3Kж^C(rLbG»)|uh縅wj}_&gt;t1kb6c,5ɚuNT2Ln
+Y=֣SֈUrtlwy}&gt;~)e&amp;*,&amp;B7ͱJıj_rE7msb-owxlg4M ;j;@dÄfFX.fb1^iR&gt;HD"4?O;%A:!=i],7;ODiǱ^D@V{[mlb"q7KSMW|Fpk/
+ȳ9D&amp;$l	"D )@X_3VVVd ,ltfuaFS ]}}MG5`QTgBP,Rv[Eǻ1|
+YuB(_
+JS,5?iZ;Bĳ8)LTÊA@9Ӽ*EEĠ0dYbQvJ#&amp;4DYP# -.Dm
+2`ր2K4%A1bWt)F"(ԣ\4m֨=w7	߁6Ƣ[?a&gt;g!4ADrO#$-&gt;I|ov^&gt;Eps`m@"aԅE(
+o&amp;4[ȕeS](t$D(F`(qQ}#BJ'2ؑO{&gt;IȖtYz$QDAdGK!}aE	;CV^0t	([gao Hq3D$.\Bجi7B]+LA4Kl 8SB5ߚv-4iTY+:km|V)w1/zbE"&amp;&gt;x QLLL1[L#NJF2ʡYTŃ^L',L9Ia))$Jmdtbݥi3#fk{̧͊Nc\`/oFvͨoD\IY&lt;
+\m`W.2^p
+4p0;ΟaEׄދHݣsVm~puIl7pں$N2\NJ8;ghv%%Ovkgzb3~Hjs
+ܭp^BɴC2gն;eV'YҮ*I)LUfacruڨ202&lt;@
+MQ&lt;=Wk8r^8 2bc\O7&gt;Svwm\0kho_?z7l3=[\&amp;8og;du}5׻daM%`\(XUlѐf@ȖV4+J,s-li,=&gt;
+O%V_I!&amp;m_&lt;ѣyVN7qG}4׎p˫V:T&gt;?ɮ_&gt;Ov4eI}_wC
+}KZ;N	zn$ati558ܭ=19'EH	btJ_hG as;[9c](Hub3V	DHr3
+	z6Ѭ8WϿ:͎6GP;y~BDg Q7FR&lt;!J&lt;}~~CdDeM$+׷'+k,U6ݸ#+6+VeKK2;kC7$Vbڻ𯽛[M7N&gt;&lt;ݏ|Nް+fg6v!fu]$x+%ݒ)2%'K,&amp;6rs4&amp;㐩z4* (4
+TJ3%ԺD `~8.Έp!zn2ԍk@'rLB&amp;Ap!E+FhU&amp;O&lt;˗6:k֖qTxׯbڦ9-ɘ4&amp;YynIx;o_L~j#߳q~(CA~2LKL+ՐJZ$T#ق.TB zlD^+ܺ(ǈXdǠ]a7}g
+!3?1]N94KDq&lt;1,a̾rفS06л[t}+E\]]\?ruI&amp;iHNf̤.$a!8jZwGc6S%=HEO=.ȷrOcĴMax+u9殳GMZ~֪;ricL*텰GH][۰o7Q!ZWp%H}~yB&lt;!RXAdMI"rq&amp;OV Tvbo4[iD	
+1{7D``_FߍZrjinN&gt;rFأqװc8;zYndYfWxIUڠi6A$\Y`!ԜV[&lt;m'^{]W؅#ho%;ߍ䨓\W8_)D`9oՉms;}7L;{f͜kVVT6Tg_?_X1&lt;?zan0V2=fq)
+EvʉrqR3&gt;GʲI(JU8
+^!
+FiJ괂
+0 YnhB 8PȼoO+1#/'+߿8ӻsr5A&gt;_aY:ٞ37S}giB|0$3[S5Rj)I.ªbqv[)͞[=&lt;-[27eU*ϾR^մ!!+9&amp;k-sR*&lt;ss|Mݖ{IiwtR;i&gt;iv n=\f#&amp;56{*Ѵ5.կPTՓIM54O@\q7N%r#ezRbc8W`Um8ђUjnY+cob(YM i$+UzN0&gt;58`jcj[j(ULżzJߵr+r6%d&amp;q }ڱ'~,õ7%gDHlVD0fZ3!*it44n*Φ331|nO{7y&gt;3/IVz岕ͽ-iᏋ	G4Q|N}tuNδZxıXv00ݮ8yY hcZchL$մ)[Xy+YDW	_˿FSpprl1l ;\	q|?7'wLobi
+uŊBpߏ,N~v\EH'uZfTZKh-#ItzxTGuRvz?׹_z^zM|!#Rp:;(5
+K׎4TUI$Loo&amp;EDpjaP`R!
+ǅS;h
+쭃`Dpa2vr1d|!/qc
+=GGLOsV4Yi7e\qCU9mno翡h\&gt;qR{m"⧙f8*΋qg*/r)^+_~MeN0oxuZ:xg\/Y_۶ھ}i^^]o,G61I:l\^V2r'g]^&lt;hn3̚9~θ?}	cYPa,"2`,H0&amp;@&amp;@:L|*a6~0`.T0A	̂0+U	aꪆkW֯ZV^88 m G냾w*	#/Ii$l6`^F&amp;1	fay#Ҭ	7bpcL`$dlO:̃4D`$u,Hyºbw瀱4U&lt;;a%3fA?'עo&gt;|oUWZh&lt;|YS/!GS)F  o!+
+endstream
+endobj
+13 0 obj
+&lt;&lt;/Type/FontDescriptor/FontName/QEGMJO+Helvetica/FontBBox[0 0 1000 1000]/Flags 65569
+/Ascent 0
+/CapHeight 0
+/Descent 0
+/ItalicAngle 0
+/StemV 0
+/AvgWidth 278
+/MaxWidth 278
+/MissingWidth 278
+/CharSet(/space)/FontFile3 23 0 R&gt;&gt;
+endobj
+%BeginResource: file (PDF FontFile obj_23)
+23 0 obj
+&lt;&lt;/Filter/FlateDecode
+/Subtype/Type1C/Length 195&gt;&gt;stream
+xcd`ab`ddH)K-LNH3a!,39nnE[W
+~/^,h9S#4(\S[[9(3=DR!R*Zde&amp;+'+($"#F f`bddaJX0{El7pߜ`
+/ SQ
+endstream
+endobj
+26 0 obj
+&lt;&lt;/Type/Metadata
+/Subtype/XML/Length 1461&gt;&gt;stream
+&lt;?xpacket begin='﻿' id='W5M0MpCehiHzreSzNTczkc9d'?&gt;
+&lt;?adobe-xap-filters esc="CRLF"?&gt;
+&lt;x:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='XMP toolkit 2.9.1-13, framework 1.6'&gt;
+&lt;rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:iX='http://ns.adobe.com/iX/1.0/'&gt;
+&lt;rdf:Description rdf:about='uuid:c30325af-fe12-11ea-0000-83b3067089e2' xmlns:pdf='http://ns.adobe.com/pdf/1.3/' pdf:Producer='GPL Ghostscript 9.06'/&gt;
+&lt;rdf:Description rdf:about='uuid:c30325af-fe12-11ea-0000-83b3067089e2' xmlns:xmp='http://ns.adobe.com/xap/1.0/'&gt;&lt;xmp:ModifyDate&gt;2020-09-20T20:05:11-07:00&lt;/xmp:ModifyDate&gt;
+&lt;xmp:CreateDate&gt;2020-09-20T20:05:11-07:00&lt;/xmp:CreateDate&gt;
+&lt;xmp:CreatorTool&gt;PScript5.dll Version 5.2.2&lt;/xmp:CreatorTool&gt;&lt;/rdf:Description&gt;
+&lt;rdf:Description rdf:about='uuid:c30325af-fe12-11ea-0000-83b3067089e2' xmlns:xapMM='http://ns.adobe.com/xap/1.0/mm/' xapMM:DocumentID='uuid:c30325af-fe12-11ea-0000-83b3067089e2'/&gt;
+&lt;rdf:Description rdf:about='uuid:c30325af-fe12-11ea-0000-83b3067089e2' xmlns:dc='http://purl.org/dc/elements/1.1/' dc:format='application/pdf'&gt;&lt;dc:title&gt;&lt;rdf:Alt&gt;&lt;rdf:li xml:lang='x-default'&gt;Microsoft Word - License Agrmt - SDK with Electron&lt;/rdf:li&gt;&lt;/rdf:Alt&gt;&lt;/dc:title&gt;&lt;dc:creator&gt;&lt;rdf:Seq&gt;&lt;rdf:li&gt;rfkaha&lt;/rdf:li&gt;&lt;/rdf:Seq&gt;&lt;/dc:creator&gt;&lt;/rdf:Description&gt;
+&lt;/rdf:RDF&gt;
+&lt;/x:xmpmeta&gt;
+                                                                        
+                                                                        
+&lt;?xpacket end='w'?&gt;
+endstream
+endobj
+2 0 obj
+&lt;&lt;/Producer(GPL Ghostscript 9.06)
+/CreationDate(D:20200920200511-07'00')
+/ModDate(D:20200920200511-07'00')
+/Title(Microsoft Word - License Agrmt - SDK with Electron)
+/Creator(PScript5.dll Version 5.2.2)
+/Author(rfkaha)&gt;&gt;endobj
+xref
+0 27
+0000000000 65535 f 
+0000013390 00000 n 
+0000047228 00000 n 
+0000013315 00000 n 
+0000012993 00000 n 
+0000000015 00000 n 
+0000011759 00000 n 
+0000013455 00000 n 
+0000014297 00000 n 
+0000015664 00000 n 
+0000015195 00000 n 
+0000033166 00000 n 
+0000015506 00000 n 
+0000045127 00000 n 
+0000013496 00000 n 
+0000013526 00000 n 
+0000013153 00000 n 
+0000011780 00000 n 
+0000012972 00000 n 
+0000013578 00000 n 
+0000013608 00000 n 
+0000015925 00000 n 
+0000033432 00000 n 
+0000045411 00000 n 
+0000013649 00000 n 
+0000014737 00000 n 
+0000045690 00000 n 
+trailer
+&lt;&lt; /Size 27 /Root 1 0 R /Info 2 0 R
+/ID [&lt;F0596FF40DEA5F6395B1CB556B312B1E&gt;&lt;F0596FF40DEA5F6395B1CB556B312B1E&gt;]
+&gt;&gt;
+startxref
+47463
+%%EOF
+</string>
+			<key>License</key>
+			<string>Dolby Software License Agreement</string>
+			<key>Title</key>
+			<string>VoxeetSDK</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>**BEFORE DOWNLOADING THE SOFTWARE, PLEASE CAREFULLY READ THE FOLLOWING AGREEMENT. DO NOT DOWNLOAD, INSTALL, ACTIVATE OR USE THIS SOFTWARE IF YOU HAVE NOT
+ENTERED INTO A COMMERCIAL AGREEMENT WITH DOLBY. BY DOWNLOADING, INSTALLING, ACTIVATING OR USING THE SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE TERMS
+OF THIS AGREEMENT. IF PRIOR TO DOWNLOADING, INSTALLING, ACTIVATING OR USING THE SOFTWARE, YOU DECIDE YOU ARE UNWILLING TO AGREE TO THE TERMS OF THIS
+AGREEMENT, YOU HAVE NO RIGHT TO USE THE SDK.**
+
+This Dolby Software License Agreement (“Agreement”) is a legal agreement between you individually if you are agreeing to it in your own capacity, or if 
+you are authorized to acquire the Software on behalf of your company or organization, between the entity for whose benefit you act (“Licensee”) and
+**Dolby Laboratories Licensing Corporation** , a New York corporation, **Dolby International AB** , a Swedish company residing in The Netherlands
+(collectively, “**Licensor**”). This Agreement is governed by the terms in the commercial agreement separately entered into by Licensee and Licensor (the
+“Commercial Agreement”), the terms of which are incorporated herein by reference. Defined terms in this Agreement and not otherwise defined herein, have
+the meanings given to them in the Commercial Agreement.
+
+1. License: Subject to the terms and conditions of this Agreement, Licensor hereby grants Licensee a revocable, royalty-free, nonexclusive,
+    nontransferable, nonassignable license (subject to Licensee’s continued compliance with this Agreement) to install and use a reasonable number of
+    copies of the Software to be used solely in the manner described in the documentation contained in the Software and as further authorized in the
+    Commercial Agreement. Licensee may not copy the Software or any portion thereof except as expressly permitted herein. For the purposes of this
+    provision "copy" shall not include copying of statements and instructions of the Software or any portion thereof that naturally occurs during normal
+    program execution when used in accordance with and for the purposes described in the documentation or in the course of making unmodified copies of
+    the Software or documentation as part of the regular back-up of the Software in accordance with standard industry business practices.
+2. EULA: If applicable, Licensee shall incorporate the End User License Agreement referenced in the Commercial Agreement.
+3. License Restriction: Licensee shall have no right to copy, modify or create derivative works of the Software, except as expressly permitted herein, or
+    to reverse assemble, reverse engineer, decompile or otherwise attempt to derive source code from the Software.
+4. Rights in Software: This Agreement is not a sale and does not transfer to Licensee any title or ownership interest in or to the Software or any
+    patent, copyright, trade secret, trade name, trademark or other proprietary or intellectual property rights related to the Software. Except for the
+    rights expressly granted herein, Licensor retains all of its right, title and interest in and to the Software. Licensee shall not remove, alter, or
+    obscure any proprietary notices contained on or within the Software and shall reproduce such notices on any back-up copy of the Software.
+5. Open Source Software: “Open Source Software” means any software or other material included in the Software which is (1) subject to a license (a)
+    listed at [http://opensource.org/licenses/](http://opensource.org/licenses/) as of the effective date, (b) that meet the criteria listed at
+    [http://opensource.org/docs/definition.php](http://opensource.org/docs/definition.php) as of the effective date, or (c) that is licensed under a free
+    software, open source software, or similar licensing model; and (2) which if distributed by Licensee would (a) impose any obligations on Licensee to
+    provide reports or royalties, or to disclose any information to a third party, or (b) impose any requirements that any patents related to the
+    Software must be licensed to, or may be asserted against, recipients of the Software. A list of such Open Source Software, as amended from time to
+    time, is provided in the documentation contained in the Software. Open Source Software also includes libraries from the FFmpeg project under the
+    LGPLv2.1. The Open Source Software is not subject to the terms and conditions of this Agreement. Instead, each item of Open Source Software is
+    licensed under the terms of the end user license that accompanies such Open Source Software. Nothing in this Agreement limits Licensee’s rights
+    under, or grants Licensee rights that supersede, the terms and conditions of any applicable end user license for the Open Source Software.
+6. Feedback: Licensee hereby grants to Licensor a non-exclusive, royalty-free, worldwide, perpetual, irrevocable, non-terminable, transferable,
+    assignable and sublicensable license to reproduce, distribute, publicly perform and display, make, have made, sell, import, modify and make
+    derivative works based on, and otherwise use and exploit any and all suggestions, comments, ideas, and all other types of information relating to the
+    Software which is communicated directly or indirectly by Licensee to Licensor.
+8. No Warranty by Licensor: LICENSOR IS PROVIDING THE SOFTWARE AND OPEN SOURCE SOFTWARE TO LICENSEE “AS IS” AND WITHOUT WARRANTY OF ANY KIND WHATSOEVER,
+    EXPRESS OR IMPLIED. ALL IMPLIED WARRANTIES OF NONINFRINGEMENT, MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE ARE HEREBY DISCLAIMED BY
+    LICENSOR AND EXCLUDED. LICENSOR DOES NOT WARRANT THAT SOFTWARE AND OPEN SOURCE SOFTWARE OR THE FUNCTIONS CONTAINED THEREIN WILL MEET LICENSEE’S
+    REQUIREMENTS, THAT THE OPERATION OF THE SOFTWARE AND OPEN SOURCE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT DEFECTS IN THE SOFTWARE AND
+    OPEN SOURCE SOFTWARE WILL BE CORRECTED. LICENSEE IS SOLELY RESPONSIBLE FOR THE USE AND DISTRIBUTION OF OPEN SOURCE SOFTWARE AND ASSUMES ALL RISKS
+    ASSOCIATED WITH ITS USE, INCLUDING WITH RESPECT TO THE FFMPEG OPEN SOURCE SOFTWARE LICENSE.
+9. Indemnification: Licensee shall indemnify, defend and hold harmless Licensor, its affiliates, their respective successors and their respective
+    officers, directors, employees, agents, and representatives for any claim, liability, loss or damage arising out of: (a) Licensee’s breach of any
+    term of this Agreement; and (b) any claim of allegedly unauthorized use or violation of any third-party patent, copyright, trade secret, or other
+    intellectual property.
+10. Term: This Agreement shall be effective upon Licensee’s agreement to be bound by the terms of this Agreement and shall end upon termination of this
+    Agreement in accordance with the provisions set out herein. Unless otherwise authorized by Licensor, Licensee must destroy all copies and component
+    parts of the Software licensed under this Agreement within one (2) weeks of the termination of this Agreement, and Licensee may be required to
+    provide proof of such destruction to Licensor. Upon the termination of this Agreement the license shall immediately terminate and Licensee shall
+    promptly stop all use of the Software.
+11. Termination: Licensor reserves the right to terminate this Agreement on thirty (30) days' notice to Licensee for any reason whatsoever.
+12. This Agreement shall not create or be construed as creating a joint venture, co-ownership, partnership, or agency relationship between Licensee and
+    Licensor. Neither Party will have authority to or will hold itself out as having any authority to incur, assume, or create, orally or in writing, any
+    liability, obligation or undertaking of any kind in the name of, or on behalf of, or in any way binding upon, the other.</string>
+			<key>License</key>
+			<string>Dolby Software License Agreement</string>
+			<key>Title</key>
+			<string>VoxeetUXKit</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Boost Software License - Version 1.0 - August 17th, 2003
+
+Permission is hereby granted, free of charge, to any person or organization
+obtaining a copy of the software and accompanying documentation covered by
+this license (the "Software") to use, reproduce, display, distribute,
+execute, and transmit the Software, and to prepare derivative works of the
+Software, and to permit third-parties to whom the Software is furnished to
+do so, all subject to the following:
+
+The copyright notices in the Software and this entire statement, including
+the above license grant, this restriction and the following disclaimer,
+must be included in all copies of the Software, in whole or in part, and
+all derivative works of the Software, unless such copies or derivative
+works are solely in the form of machine-executable object code generated by
+a source language processor.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+</string>
+			<key>License</key>
+			<string>Boost Software License</string>
+			<key>Title</key>
+			<string>boost-for-react-native</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright (c) 2008, Google Inc.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+    * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+    * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+A function gettimeofday in utilities.cc is based on
+
+http://www.google.com/codesearch/p?hl=en#dR3YEbitojA/COPYING&amp;q=GetSystemTimeAsFileTime%20license:bsd
+
+The license of this code is:
+
+Copyright (c) 2003-2008, Jouni Malinen &lt;j@w1.fi&gt; and contributors
+All Rights Reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+
+3. Neither the name(s) of the above-listed copyright holder(s) nor the
+   names of its contributors may be used to endorse or promote products
+   derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</string>
+			<key>License</key>
+			<string>Google</string>
+			<key>Title</key>
+			<string>glog</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>MIT License
+
+Copyright (c) 2021 Dolby Laboratories
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</string>
+			<key>License</key>
+			<string>Dolby Software License Agreement</string>
+			<key>Title</key>
+			<string>voxeet-uxkit-reactnative</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Generated by CocoaPods - https://cocoapods.org</string>
+			<key>Title</key>
+			<string></string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Acknowledgements</string>
+	<key>Title</key>
+	<string>Acknowledgements</string>
+</dict>
+</plist>
